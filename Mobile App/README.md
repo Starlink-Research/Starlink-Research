@@ -215,7 +215,7 @@ function_sections = file_content.split('===============\n')
 
 ![image.png](Img/53a9ce47-670d-40c5-99aa-45866ecfb04e.png)
 
-이제 함수들의 플로우를 graphviz로 시각화하였다. 아래는 예시 함수이다.
+이제 함수들의 플로우를 **graphviz**로 시각화하였다. 아래는 예시 함수이다.
 
 ```python
 # Recursive function to create a flow diagram for a function and its connections
