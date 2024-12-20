@@ -1,0 +1,77 @@
+; This script was created with reference to the Starlink-FI project: 
+; https://github.com/KULeuven-COSIC/Starlink-FI
+; Copyright belongs to the original authors. Please check their license for terms of use.
+
+.program pulsegen
+
+; 측면 셋(side set)에 두 개의 비트 사용
+.side_set 2
+
+entry:
+    ; FIFO에서 값을 읽어옵니다 (에지 수를 가져옴)
+    ; (자동 PULL 기능을 사용하면 PULL 명령어를 제거할 수 있음)
+    PULL BLOCK side 0 ; 에지 수를 가져오기 위해 PULL 명령 실행
+    MOV X, OSR side 0 ; OSR 레지스터 값을 X 레지스터로 이동 (OUT 명령어를 대신 사용할 수도 있음)
+    
+    ; 펄스 오프셋 값 읽기
+    PULL BLOCK side 0
+    MOV Y, OSR side 0 ; OSR 값을 Y 레지스터로 이동
+
+    ; 인터럽트 클리어 (M0 코어 측에서 처리하는 경우 생략 가능)
+    IRQ CLEAR 0 side 0
+
+nedges:
+    ; 상승 에지 감지 대기
+    WAIT 0 PIN 0 side 0 ; 핀 0이 LOW 상태일 때 대기
+    WAIT 1 PIN 0 side 0 ; 핀 0이 HIGH 상태일 때 대기
+    JMP X-- nedges side 0 ; 에지 수를 감소시키며 0이 될 때까지 루프 반복
+
+    ; 펄스 폭 값을 읽음
+    PULL BLOCK side 0
+    MOV X, OSR side 0 ; OSR 값을 X 레지스터로 이동
+
+; 펄스 오프셋 사이클 실행
+poffset:
+    JMP Y-- poffset side 2 ; Y 값이 0이 될 때까지 루프 실행 (오프셋 지연)
+
+; 펄스 폭 사이클 실행
+pwidth:
+    JMP X-- pwidth side 3 ; X 값이 0이 될 때까지 루프 실행 (펄스 폭 유지)
+
+    ; 고정된 지연 추가 (글리치 삽입 이후 커패시터가 다시 활성화되기 전에 대기)
+    SET Y, 31 side 2 ; Y 값을 31로 설정 (지연 횟수 설정)
+delay:
+    NOP side 2 [7] ; 7 클럭 사이클 NOP 명령 실행
+    NOP side 2 [7]
+    NOP side 2 [7]
+    NOP side 2 [7]
+    NOP side 2 [7]
+    JMP Y-- delay side 2 ; Y 값을 감소시키며 지연 루프 실행
+
+    ; 펄스 삽입 완료 신호 전송 및 펄스 비활성화
+    IRQ WAIT 0 side 0 ; 인터럽트를 대기하며 펄스를 종료
+
+
+% c-sdk {
+void pulsegen_program_init(PIO pio, uint sm, uint offset, uint trigger_pin, uint pulse_pin, uint caps_pin) {
+    pio_sm_config c = pulsegen_program_get_default_config(offset);
+
+    ; 사이드 셋 핀 설정 (pulse_pin 사용)
+    sm_config_set_sideset_pins(&c, pulse_pin);
+    sm_config_set_in_pins(&c, trigger_pin);
+    sm_config_set_in_shift(&c, false, false, 32);
+    
+    ; GPIO 초기화
+    pio_gpio_init(pio, trigger_pin);
+    pio_gpio_init(pio, pulse_pin);
+    pio_gpio_init(pio, caps_pin);
+
+    ; 핀 방향 설정 (trigger_pin 입력, pulse_pin 출력)
+    pio_sm_set_consecutive_pindirs(pio, sm, trigger_pin, 1, false);
+    pio_sm_set_consecutive_pindirs(pio, sm, pulse_pin, 2, true);
+
+    ; 클럭 분할 설정
+    sm_config_set_clkdiv(&c, 1);
+    pio_sm_init(pio, sm, offset, &c);
+}
+%}

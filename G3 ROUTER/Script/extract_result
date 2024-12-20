@@ -1,0 +1,3563 @@
+.
+├── bin
+│   ├── ash -> busybox
+│   ├── board_detect
+│   ├── busybox
+│   ├── cat -> busybox
+│   ├── chgrp -> busybox
+│   ├── chmod -> busybox
+│   ├── chown -> busybox
+│   ├── config_generate
+│   ├── cp -> busybox
+│   ├── date -> busybox
+│   ├── dd -> busybox
+│   ├── df -> busybox
+│   ├── dmesg -> busybox
+│   ├── echo -> busybox
+│   ├── egrep -> busybox
+│   ├── false -> busybox
+│   ├── fgrep -> busybox
+│   ├── fsync -> busybox
+│   ├── gdbserver-8.3.1-aarch64-le
+│   ├── grep -> busybox
+│   ├── gunzip -> busybox
+│   ├── gzip -> busybox
+│   ├── ipcalc.sh
+│   ├── kill -> busybox
+│   ├── ln -> busybox
+│   ├── lock -> busybox
+│   ├── login -> busybox
+│   ├── ls -> busybox
+│   ├── mkdir -> busybox
+│   ├── mknod -> busybox
+│   ├── mktemp -> busybox
+│   ├── mount -> busybox
+│   ├── mpstat -> busybox
+│   ├── mv -> busybox
+│   ├── netmsg -> busybox
+│   ├── netstat -> busybox
+│   ├── nice -> busybox
+│   ├── opkg
+│   ├── passwd -> busybox
+│   ├── pidof -> busybox
+│   ├── ping -> busybox
+│   ├── ping6 -> busybox
+│   ├── ps -> busybox
+│   ├── pwd -> busybox
+│   ├── rm -> busybox
+│   ├── rmdir -> busybox
+│   ├── sed -> busybox
+│   ├── sh -> busybox
+│   ├── sleep -> busybox
+│   ├── stm32flash
+│   ├── stty -> busybox
+│   ├── sync -> busybox
+│   ├── tar -> busybox
+│   ├── touch -> busybox
+│   ├── traceroute -> busybox
+│   ├── traceroute6 -> busybox
+│   ├── true -> busybox
+│   ├── ubus
+│   ├── uclient-fetch
+│   ├── umount -> busybox
+│   ├── uname -> busybox
+│   ├── usleep -> busybox
+│   ├── vi -> busybox
+│   └── zcat -> busybox
+├── config
+├── dev
+├── etc
+│   ├── Makefile
+│   ├── WiFi-alliancelogo_3D.png
+│   ├── WiFi-alliancelogo_3D_default.png
+│   ├── banner
+│   ├── banner.failsafe
+│   ├── banner.mtk
+│   ├── board
+│   ├── board.d
+│   │   ├── 02_network
+│   │   └── 99-default_network
+│   ├── capabilities
+│   │   └── ntpd.json
+│   ├── config
+│   │   ├── dhcp
+│   │   ├── luci
+│   │   ├── mtkhnat
+│   │   ├── omcproxy
+│   │   ├── ucitrack
+│   │   └── wapp
+│   ├── crontabs
+│   │   └── root
+│   ├── device_info
+│   ├── diag.sh
+│   ├── dnsmasq.conf
+│   ├── dpp_cfg.txt
+│   ├── ethernet_cfg.txt
+│   ├── ethers
+│   ├── ethertypes
+│   ├── fstab
+│   ├── group
+│   ├── hotplug-preinit.json
+│   ├── hotplug.d
+│   │   ├── block
+│   │   │   ├── 00-media-change
+│   │   │   └── 10-mount
+│   │   ├── dhcp
+│   │   ├── iface
+│   │   │   ├── 00-netstate
+│   │   │   ├── 98-mtk-vpn
+│   │   │   └── 99-mtk-lro
+│   │   ├── neigh
+│   │   ├── net
+│   │   │   ├── 00-sysctl
+│   │   │   └── 20-smp-packet-steering
+│   │   ├── ntp
+│   │   │   ├── 20-wifi_control-time
+│   │   │   └── 25-dnsmasqsec
+│   │   └── tftp
+│   ├── hotplug.json
+│   ├── icon_blue.png
+│   ├── icon_blue_eng.png
+│   ├── icon_blue_eng_default.png
+│   ├── icon_blue_zxx.png
+│   ├── icon_blue_zxx_default.png
+│   ├── icon_green.png
+│   ├── icon_green_eng.png
+│   ├── icon_green_eng_default.png
+│   ├── icon_green_zxx.png
+│   ├── icon_green_zxx_default.png
+│   ├── icon_orange.png
+│   ├── icon_orange_eng.png
+│   ├── icon_orange_eng_default.png
+│   ├── icon_orange_zxx.png
+│   ├── icon_orange_zxx_default.png
+│   ├── icon_red.png
+│   ├── icon_red_eng.png
+│   ├── icon_red_eng_default.png
+│   ├── icon_red_zxx.png
+│   ├── icon_red_zxx_default.png
+│   ├── init.d
+│   │   ├── blockd
+│   │   ├── boot
+│   │   ├── cron
+│   │   ├── dnsmasq
+│   │   ├── done
+│   │   ├── easymesh
+│   │   ├── easymesh_bridge
+│   │   ├── fstab
+│   │   ├── gpio_switch
+│   │   ├── led
+│   │   ├── log
+│   │   ├── mtkhnat
+│   │   ├── network
+│   │   ├── odhcpd
+│   │   ├── omcproxy
+│   │   ├── pppq-ebl.init
+│   │   ├── sshd
+│   │   ├── sysctl
+│   │   ├── sysfixtime
+│   │   ├── sysntpd
+│   │   ├── system
+│   │   ├── ucitrack
+│   │   ├── umount
+│   │   ├── update_stm32
+│   │   ├── urandom_seed
+│   │   ├── urngd
+│   │   ├── wapp
+│   │   ├── watchdog
+│   │   ├── wifi_control
+│   │   ├── wifi_control.i64
+│   │   └── wsdd2
+│   ├── inittab
+│   ├── iproute2
+│   │   ├── ematch_map
+│   │   ├── rt_protos
+│   │   └── rt_tables
+│   ├── kernel.config
+│   ├── luci-uploads
+│   ├── map
+│   │   ├── 1905_dpp_keys.txt
+│   │   ├── 1905d.cfg
+│   │   ├── mapd_default.cfg
+│   │   ├── mapd_user.cfg
+│   │   └── wts_bss_info_config
+│   ├── modules-boot.d
+│   │   ├── 02-crypto-hash -> ../modules.d/02-crypto-hash
+│   │   ├── 04-crypto-crc32c -> ../modules.d/04-crypto-crc32c
+│   │   ├── 09-crypto-aead -> ../modules.d/09-crypto-aead
+│   │   ├── 09-crypto-manager -> ../modules.d/09-crypto-manager
+│   │   ├── 10-conninfra -> ../modules.d/10-conninfra
+│   │   ├── 20-phy-air_en8811h -> ../modules.d/20-phy-air_en8811h
+│   │   ├── 30-gpio-button-hotplug -> ../modules.d/30-gpio-button-hotplug
+│   │   ├── 40-scsi-core -> ../modules.d/40-scsi-core
+│   │   ├── 60-leds-gpio -> ../modules.d/60-leds-gpio
+│   │   └── 60-warp -> ../modules.d/60-warp
+│   ├── modules.d
+│   │   ├── 02-crypto-hash
+│   │   ├── 04-crypto-crc32c
+│   │   ├── 09-crypto-acompress
+│   │   ├── 09-crypto-aead
+│   │   ├── 09-crypto-arc4
+│   │   ├── 09-crypto-authenc
+│   │   ├── 09-crypto-cbc
+│   │   ├── 09-crypto-ccm
+│   │   ├── 09-crypto-cmac
+│   │   ├── 09-crypto-ctr
+│   │   ├── 09-crypto-deflate
+│   │   ├── 09-crypto-des
+│   │   ├── 09-crypto-ecb
+│   │   ├── 09-crypto-echainiv
+│   │   ├── 09-crypto-gcm
+│   │   ├── 09-crypto-gf128
+│   │   ├── 09-crypto-ghash
+│   │   ├── 09-crypto-hmac
+│   │   ├── 09-crypto-manager
+│   │   ├── 09-crypto-md4
+│   │   ├── 09-crypto-md5
+│   │   ├── 09-crypto-null
+│   │   ├── 09-crypto-rng
+│   │   ├── 09-crypto-seqiv
+│   │   ├── 09-crypto-sha1
+│   │   ├── 09-crypto-sha256
+│   │   ├── 09-crypto-sha512
+│   │   ├── 10-conninfra
+│   │   ├── 13-macsec
+│   │   ├── 20-phy-air_en8811h
+│   │   ├── 25-nls-cp437
+│   │   ├── 25-nls-iso8859-1
+│   │   ├── 25-nls-utf8
+│   │   ├── 30-fs-autofs4
+│   │   ├── 30-fs-vfat
+│   │   ├── 30-gpio-button-hotplug
+│   │   ├── 30-ipsec
+│   │   ├── 31-iptunnel
+│   │   ├── 31-iptunnel4
+│   │   ├── 31-iptunnel6
+│   │   ├── 32-ip6-tunnel
+│   │   ├── 32-ipsec4
+│   │   ├── 32-ipsec6
+│   │   ├── 32-l2tp
+│   │   ├── 32-udptunnel4
+│   │   ├── 32-udptunnel6
+│   │   ├── 39-gre
+│   │   ├── 39-gre6
+│   │   ├── 40-scsi-core
+│   │   ├── 42-ip6tables
+│   │   ├── 49-ipt-ipset
+│   │   ├── 60-leds-gpio
+│   │   ├── 60-warp
+│   │   ├── 70-sched-core
+│   │   ├── 81-mtk-efuse-nl-drv
+│   │   ├── ebtables
+│   │   ├── ebtables-ipv4
+│   │   ├── ipt-conntrack
+│   │   ├── ipt-core
+│   │   ├── ipt-extra
+│   │   ├── ipt-ipopt
+│   │   ├── ipt-ipsec
+│   │   ├── ipt-nat
+│   │   ├── ipt-offload
+│   │   ├── lib-crc-ccitt
+│   │   ├── lib-crc32c
+│   │   ├── lib-zlib-deflate
+│   │   ├── lib-zlib-inflate
+│   │   ├── mapfilter
+│   │   ├── mppe
+│   │   ├── mt7915
+│   │   ├── mt_wifi
+│   │   ├── mtfwd
+│   │   ├── nf-flow
+│   │   ├── nf-ipt
+│   │   ├── nf-ipt6
+│   │   ├── nf-nat
+│   │   ├── nf-reject
+│   │   ├── nf-reject6
+│   │   ├── nfnetlink
+│   │   ├── ppp
+│   │   ├── pppoe
+│   │   ├── pppol2tp
+│   │   ├── pptp
+│   │   └── sched-cake
+│   ├── openwrt.config
+│   ├── openwrt_release
+│   ├── openwrt_version
+│   ├── opkg
+│   │   ├── customfeeds.conf
+│   │   ├── distfeeds.conf
+│   │   └── keys
+│   │       ├── 22c0779df857dfa0
+│   │       └── 2f8b0b98e08306bf
+│   ├── opkg.conf
+│   ├── os-release -> ../usr/lib/os-release
+│   ├── passwd
+│   ├── ppp
+│   │   ├── chap-secrets
+│   │   ├── filter
+│   │   ├── options
+│   │   └── options.pptp
+│   ├── preinit
+│   ├── profile
+│   ├── protocols
+│   ├── rc.button
+│   │   ├── reset
+│   │   └── wps
+│   ├── rc.common
+│   ├── rc.d
+│   │   ├── K10gpio_switch -> ../init.d/gpio_switch
+│   │   ├── K50sshd -> ../init.d/sshd
+│   │   ├── K85odhcpd -> ../init.d/odhcpd
+│   │   ├── K89log -> ../init.d/log
+│   │   ├── K90boot -> ../init.d/boot
+│   │   ├── K90network -> ../init.d/network
+│   │   ├── K90sysfixtime -> ../init.d/sysfixtime
+│   │   ├── K90umount -> ../init.d/umount
+│   │   ├── K90wapp -> ../init.d/wapp
+│   │   ├── S00sysfixtime -> ../init.d/sysfixtime
+│   │   ├── S00urngd -> ../init.d/urngd
+│   │   ├── S10boot -> ../init.d/boot
+│   │   ├── S10system -> ../init.d/system
+│   │   ├── S11sysctl -> ../init.d/sysctl
+│   │   ├── S12log -> ../init.d/log
+│   │   ├── S19dnsmasq -> ../init.d/dnsmasq
+│   │   ├── S19mtkhnat -> ../init.d/mtkhnat
+│   │   ├── S20network -> ../init.d/network
+│   │   ├── S35odhcpd -> ../init.d/odhcpd
+│   │   ├── S40fstab -> ../init.d/fstab
+│   │   ├── S50cron -> ../init.d/cron
+│   │   ├── S50sshd -> ../init.d/sshd
+│   │   ├── S50wifi_control -> ../init.d/wifi_control
+│   │   ├── S51watchdog -> ../init.d/watchdog
+│   │   ├── S80blockd -> ../init.d/blockd
+│   │   ├── S80ucitrack -> ../init.d/ucitrack
+│   │   ├── S80wapp -> ../init.d/wapp
+│   │   ├── S94gpio_switch -> ../init.d/gpio_switch
+│   │   ├── S95done -> ../init.d/done
+│   │   ├── S96led -> ../init.d/led
+│   │   ├── S98sysntpd -> ../init.d/sysntpd
+│   │   ├── S99omcproxy -> ../init.d/omcproxy
+│   │   ├── S99pppq-ebl.init -> ../init.d/pppq-ebl.init
+│   │   ├── S99urandom_seed -> ../init.d/urandom_seed
+│   │   └── S99wsdd2 -> ../init.d/wsdd2
+│   ├── rc.local
+│   ├── sdk.version
+│   ├── services
+│   ├── shadow
+│   ├── shells
+│   ├── shinit
+│   ├── spacex
+│   │   ├── certs
+│   │   │   ├── cloud-root.crt
+│   │   │   ├── dev-root.crt
+│   │   │   ├── swupdate-root.crt
+│   │   │   └── telemetry-root.crt
+│   │   └── prod.signkeyhash
+│   ├── ssh
+│   │   ├── ssh_config
+│   │   └── sshd_config
+│   ├── ssl
+│   │   ├── certs
+│   │   │   ├── 02265526.0 -> Entrust_Root_Certification_Authority_-_G2.crt
+│   │   │   ├── 03179a64.0 -> Staat_der_Nederlanden_EV_Root_CA.crt
+│   │   │   ├── 062cdee6.0 -> GlobalSign_Root_CA_-_R3.crt
+│   │   │   ├── 064e0aa9.0 -> QuoVadis_Root_CA_2_G3.crt
+│   │   │   ├── 06dc52d5.0 -> SSL.com_EV_Root_Certification_Authority_RSA_R2.crt
+│   │   │   ├── 080911ac.0 -> QuoVadis_Root_CA.crt
+│   │   │   ├── 09789157.0 -> Starfield_Services_Root_Certificate_Authority_-_G2.crt
+│   │   │   ├── 0a775a30.0 -> GTS_Root_R3.crt
+│   │   │   ├── 0b1b94ef.0 -> CFCA_EV_ROOT.crt
+│   │   │   ├── 0bf05006.0 -> SSL.com_Root_Certification_Authority_ECC.crt
+│   │   │   ├── 0c4c9b6c.0 -> Global_Chambersign_Root_-_2008.crt
+│   │   │   ├── 0f5dc4f3.0 -> UCA_Extended_Validation_Root.crt
+│   │   │   ├── 0f6fa695.0 -> GDCA_TrustAUTH_R5_ROOT.crt
+│   │   │   ├── 1001acf7.0 -> GTS_Root_R1.crt
+│   │   │   ├── 106f3e4d.0 -> Entrust_Root_Certification_Authority_-_EC1.crt
+│   │   │   ├── 116bf586.0 -> GeoTrust_Primary_Certification_Authority_-_G2.crt
+│   │   │   ├── 14bc7599.0 -> emSign_ECC_Root_CA_-_G3.crt
+│   │   │   ├── 1636090b.0 -> Hellenic_Academic_and_Research_Institutions_RootCA_2011.crt
+│   │   │   ├── 18856ac4.0 -> SecureSign_RootCA11.crt
+│   │   │   ├── 1d3472b9.0 -> GlobalSign_ECC_Root_CA_-_R5.crt
+│   │   │   ├── 1e08bfd1.0 -> IdenTrust_Public_Sector_Root_CA_1.crt
+│   │   │   ├── 1e09d511.0 -> T-TeleSec_GlobalRoot_Class_2.crt
+│   │   │   ├── 244b5494.0 -> DigiCert_High_Assurance_EV_Root_CA.crt
+│   │   │   ├── 2923b3f9.0 -> emSign_Root_CA_-_G1.crt
+│   │   │   ├── 2ae6433e.0 -> CA_Disig_Root_R2.crt
+│   │   │   ├── 2b349938.0 -> AffirmTrust_Commercial.crt
+│   │   │   ├── 2e5ac55d.0 -> DST_Root_CA_X3.crt
+│   │   │   ├── 32888f65.0 -> Hellenic_Academic_and_Research_Institutions_RootCA_2015.crt
+│   │   │   ├── 349f2832.0 -> EC-ACC.crt
+│   │   │   ├── 3513523f.0 -> DigiCert_Global_Root_CA.crt
+│   │   │   ├── 3bde41ac.0 -> Autoridad_de_Certificacion_Firmaprofesional_CIF_A62634068.crt
+│   │   │   ├── 3e44d2f7.0 -> TrustCor_RootCert_CA-2.crt
+│   │   │   ├── 3e45d192.0 -> Hongkong_Post_Root_CA_1.crt
+│   │   │   ├── 3fb36b73.0 -> NAVER_Global_Root_Certification_Authority.crt
+│   │   │   ├── 40193066.0 -> Certum_Trusted_Network_CA_2.crt
+│   │   │   ├── 4042bcee.0 -> ISRG_Root_X1.crt
+│   │   │   ├── 40547a79.0 -> COMODO_Certification_Authority.crt
+│   │   │   ├── 406c9bb1.0 -> emSign_Root_CA_-_C1.crt
+│   │   │   ├── 4304c5e5.0 -> Network_Solutions_Certificate_Authority.crt
+│   │   │   ├── 48bec511.0 -> Certum_Trusted_Network_CA.crt
+│   │   │   ├── 4a6481c9.0 -> GlobalSign_Root_CA_-_R2.crt
+│   │   │   ├── 4b718d9b.0 -> emSign_ECC_Root_CA_-_C3.crt
+│   │   │   ├── 4bfab552.0 -> Starfield_Root_Certificate_Authority_-_G2.crt
+│   │   │   ├── 4f316efb.0 -> SwissSign_Gold_CA_-_G2.crt
+│   │   │   ├── 5273a94c.0 -> E-Tugra_Certification_Authority.crt
+│   │   │   ├── 5443e9e3.0 -> T-TeleSec_GlobalRoot_Class_3.crt
+│   │   │   ├── 54657681.0 -> Buypass_Class_2_Root_CA.crt
+│   │   │   ├── 57bcb2da.0 -> SwissSign_Silver_CA_-_G2.crt
+│   │   │   ├── 5a4d6896.0 -> Staat_der_Nederlanden_Root_CA_-_G3.crt
+│   │   │   ├── 5ad8a5d6.0 -> GlobalSign_Root_CA.crt
+│   │   │   ├── 5cd81ad7.0 -> TeliaSonera_Root_CA_v1.crt
+│   │   │   ├── 5d3033c5.0 -> TrustCor_RootCert_CA-1.crt
+│   │   │   ├── 5e98733a.0 -> Entrust_Root_Certification_Authority_-_G4.crt
+│   │   │   ├── 5f15c80c.0 -> TWCA_Global_Root_CA.crt
+│   │   │   ├── 5f618aec.0 -> certSIGN_Root_CA_G2.crt
+│   │   │   ├── 607986c7.0 -> DigiCert_Global_Root_G2.crt
+│   │   │   ├── 626dceaf.0 -> GTS_Root_R2.crt
+│   │   │   ├── 653b494a.0 -> Baltimore_CyberTrust_Root.crt
+│   │   │   ├── 68dd7389.0 -> Hongkong_Post_Root_CA_3.crt
+│   │   │   ├── 6b99d060.0 -> Entrust_Root_Certification_Authority.crt
+│   │   │   ├── 6d41d539.0 -> Amazon_Root_CA_2.crt
+│   │   │   ├── 6fa5da56.0 -> SSL.com_Root_Certification_Authority_RSA.crt
+│   │   │   ├── 706f604c.0 -> XRamp_Global_CA_Root.crt
+│   │   │   ├── 749e9e03.0 -> QuoVadis_Root_CA_1_G3.crt
+│   │   │   ├── 75d1b2ed.0 -> DigiCert_Trusted_Root_G4.crt
+│   │   │   ├── 76cb8f92.0 -> Cybertrust_Global_Root.crt
+│   │   │   ├── 76faf6c0.0 -> QuoVadis_Root_CA_3.crt
+│   │   │   ├── 7719f463.0 -> Hellenic_Academic_and_Research_Institutions_ECC_RootCA_2015.crt
+│   │   │   ├── 773e07ad.0 -> OISTE_WISeKey_Global_Root_GC_CA.crt
+│   │   │   ├── 7aaf71c0.0 -> TrustCor_ECA-1.crt
+│   │   │   ├── 7f3d5d1d.0 -> DigiCert_Assured_ID_Root_G3.crt
+│   │   │   ├── 8160b96c.0 -> Microsec_e-Szigno_Root_CA_2009.crt
+│   │   │   ├── 8cb5ee0f.0 -> Amazon_Root_CA_3.crt
+│   │   │   ├── 8d86cdd1.0 -> certSIGN_ROOT_CA.crt
+│   │   │   ├── 8d89cda1.0 -> Microsoft_ECC_Root_Certificate_Authority_2017.crt
+│   │   │   ├── 930ac5d2.0 -> Actalis_Authentication_Root_CA.crt
+│   │   │   ├── 93bc0acc.0 -> AffirmTrust_Networking.crt
+│   │   │   ├── 988a38cb.0 -> NetLock_Arany_=Class_Gold=_Főtanúsítvány.crt
+│   │   │   ├── 9b5697b0.0 -> Trustwave_Global_ECC_P256_Certification_Authority.crt
+│   │   │   ├── 9c2e7d30.0 -> Sonera_Class_2_Root_CA.crt
+│   │   │   ├── 9c8dfbd4.0 -> AffirmTrust_Premium_ECC.crt
+│   │   │   ├── 9d04f354.0 -> DigiCert_Assured_ID_Root_G2.crt
+│   │   │   ├── ACCVRAIZ1.crt
+│   │   │   ├── AC_RAIZ_FNMT-RCM.crt
+│   │   │   ├── Actalis_Authentication_Root_CA.crt
+│   │   │   ├── AffirmTrust_Commercial.crt
+│   │   │   ├── AffirmTrust_Networking.crt
+│   │   │   ├── AffirmTrust_Premium.crt
+│   │   │   ├── AffirmTrust_Premium_ECC.crt
+│   │   │   ├── Amazon_Root_CA_1.crt
+│   │   │   ├── Amazon_Root_CA_2.crt
+│   │   │   ├── Amazon_Root_CA_3.crt
+│   │   │   ├── Amazon_Root_CA_4.crt
+│   │   │   ├── Atos_TrustedRoot_2011.crt
+│   │   │   ├── Autoridad_de_Certificacion_Firmaprofesional_CIF_A62634068.crt
+│   │   │   ├── Baltimore_CyberTrust_Root.crt
+│   │   │   ├── Buypass_Class_2_Root_CA.crt
+│   │   │   ├── Buypass_Class_3_Root_CA.crt
+│   │   │   ├── CA_Disig_Root_R2.crt
+│   │   │   ├── CFCA_EV_ROOT.crt
+│   │   │   ├── COMODO_Certification_Authority.crt
+│   │   │   ├── COMODO_ECC_Certification_Authority.crt
+│   │   │   ├── COMODO_RSA_Certification_Authority.crt
+│   │   │   ├── Certigna.crt
+│   │   │   ├── Certigna_Root_CA.crt
+│   │   │   ├── Certum_Trusted_Network_CA.crt
+│   │   │   ├── Certum_Trusted_Network_CA_2.crt
+│   │   │   ├── Chambers_of_Commerce_Root_-_2008.crt
+│   │   │   ├── Comodo_AAA_Services_root.crt
+│   │   │   ├── Cybertrust_Global_Root.crt
+│   │   │   ├── D-TRUST_Root_Class_3_CA_2_2009.crt
+│   │   │   ├── D-TRUST_Root_Class_3_CA_2_EV_2009.crt
+│   │   │   ├── DST_Root_CA_X3.crt
+│   │   │   ├── DigiCert_Assured_ID_Root_CA.crt
+│   │   │   ├── DigiCert_Assured_ID_Root_G2.crt
+│   │   │   ├── DigiCert_Assured_ID_Root_G3.crt
+│   │   │   ├── DigiCert_Global_Root_CA.crt
+│   │   │   ├── DigiCert_Global_Root_G2.crt
+│   │   │   ├── DigiCert_Global_Root_G3.crt
+│   │   │   ├── DigiCert_High_Assurance_EV_Root_CA.crt
+│   │   │   ├── DigiCert_Trusted_Root_G4.crt
+│   │   │   ├── E-Tugra_Certification_Authority.crt
+│   │   │   ├── EC-ACC.crt
+│   │   │   ├── Entrust.net_Premium_2048_Secure_Server_CA.crt
+│   │   │   ├── Entrust_Root_Certification_Authority.crt
+│   │   │   ├── Entrust_Root_Certification_Authority_-_EC1.crt
+│   │   │   ├── Entrust_Root_Certification_Authority_-_G2.crt
+│   │   │   ├── Entrust_Root_Certification_Authority_-_G4.crt
+│   │   │   ├── GDCA_TrustAUTH_R5_ROOT.crt
+│   │   │   ├── GTS_Root_R1.crt
+│   │   │   ├── GTS_Root_R2.crt
+│   │   │   ├── GTS_Root_R3.crt
+│   │   │   ├── GTS_Root_R4.crt
+│   │   │   ├── GeoTrust_Primary_Certification_Authority_-_G2.crt
+│   │   │   ├── GlobalSign_ECC_Root_CA_-_R4.crt
+│   │   │   ├── GlobalSign_ECC_Root_CA_-_R5.crt
+│   │   │   ├── GlobalSign_Root_CA.crt
+│   │   │   ├── GlobalSign_Root_CA_-_R2.crt
+│   │   │   ├── GlobalSign_Root_CA_-_R3.crt
+│   │   │   ├── GlobalSign_Root_CA_-_R6.crt
+│   │   │   ├── Global_Chambersign_Root_-_2008.crt
+│   │   │   ├── Go_Daddy_Class_2_CA.crt
+│   │   │   ├── Go_Daddy_Root_Certificate_Authority_-_G2.crt
+│   │   │   ├── Hellenic_Academic_and_Research_Institutions_ECC_RootCA_2015.crt
+│   │   │   ├── Hellenic_Academic_and_Research_Institutions_RootCA_2011.crt
+│   │   │   ├── Hellenic_Academic_and_Research_Institutions_RootCA_2015.crt
+│   │   │   ├── Hongkong_Post_Root_CA_1.crt
+│   │   │   ├── Hongkong_Post_Root_CA_3.crt
+│   │   │   ├── ISRG_Root_X1.crt
+│   │   │   ├── IdenTrust_Commercial_Root_CA_1.crt
+│   │   │   ├── IdenTrust_Public_Sector_Root_CA_1.crt
+│   │   │   ├── Izenpe.com.crt
+│   │   │   ├── Microsec_e-Szigno_Root_CA_2009.crt
+│   │   │   ├── Microsoft_ECC_Root_Certificate_Authority_2017.crt
+│   │   │   ├── Microsoft_RSA_Root_Certificate_Authority_2017.crt
+│   │   │   ├── NAVER_Global_Root_Certification_Authority.crt
+│   │   │   ├── NetLock_Arany_=Class_Gold=_Főtanúsítvány.crt
+│   │   │   ├── Network_Solutions_Certificate_Authority.crt
+│   │   │   ├── OISTE_WISeKey_Global_Root_GB_CA.crt
+│   │   │   ├── OISTE_WISeKey_Global_Root_GC_CA.crt
+│   │   │   ├── QuoVadis_Root_CA.crt
+│   │   │   ├── QuoVadis_Root_CA_1_G3.crt
+│   │   │   ├── QuoVadis_Root_CA_2.crt
+│   │   │   ├── QuoVadis_Root_CA_2_G3.crt
+│   │   │   ├── QuoVadis_Root_CA_3.crt
+│   │   │   ├── QuoVadis_Root_CA_3_G3.crt
+│   │   │   ├── SSL.com_EV_Root_Certification_Authority_ECC.crt
+│   │   │   ├── SSL.com_EV_Root_Certification_Authority_RSA_R2.crt
+│   │   │   ├── SSL.com_Root_Certification_Authority_ECC.crt
+│   │   │   ├── SSL.com_Root_Certification_Authority_RSA.crt
+│   │   │   ├── SZAFIR_ROOT_CA2.crt
+│   │   │   ├── SecureSign_RootCA11.crt
+│   │   │   ├── SecureTrust_CA.crt
+│   │   │   ├── Secure_Global_CA.crt
+│   │   │   ├── Security_Communication_RootCA2.crt
+│   │   │   ├── Security_Communication_Root_CA.crt
+│   │   │   ├── Sonera_Class_2_Root_CA.crt
+│   │   │   ├── Staat_der_Nederlanden_EV_Root_CA.crt
+│   │   │   ├── Staat_der_Nederlanden_Root_CA_-_G3.crt
+│   │   │   ├── Starfield_Class_2_CA.crt
+│   │   │   ├── Starfield_Root_Certificate_Authority_-_G2.crt
+│   │   │   ├── Starfield_Services_Root_Certificate_Authority_-_G2.crt
+│   │   │   ├── SwissSign_Gold_CA_-_G2.crt
+│   │   │   ├── SwissSign_Silver_CA_-_G2.crt
+│   │   │   ├── T-TeleSec_GlobalRoot_Class_2.crt
+│   │   │   ├── T-TeleSec_GlobalRoot_Class_3.crt
+│   │   │   ├── TUBITAK_Kamu_SM_SSL_Kok_Sertifikasi_-_Surum_1.crt
+│   │   │   ├── TWCA_Global_Root_CA.crt
+│   │   │   ├── TWCA_Root_Certification_Authority.crt
+│   │   │   ├── TeliaSonera_Root_CA_v1.crt
+│   │   │   ├── TrustCor_ECA-1.crt
+│   │   │   ├── TrustCor_RootCert_CA-1.crt
+│   │   │   ├── TrustCor_RootCert_CA-2.crt
+│   │   │   ├── Trustis_FPS_Root_CA.crt
+│   │   │   ├── Trustwave_Global_Certification_Authority.crt
+│   │   │   ├── Trustwave_Global_ECC_P256_Certification_Authority.crt
+│   │   │   ├── Trustwave_Global_ECC_P384_Certification_Authority.crt
+│   │   │   ├── UCA_Extended_Validation_Root.crt
+│   │   │   ├── UCA_Global_G2_Root.crt
+│   │   │   ├── USERTrust_ECC_Certification_Authority.crt
+│   │   │   ├── USERTrust_RSA_Certification_Authority.crt
+│   │   │   ├── VeriSign_Universal_Root_Certification_Authority.crt
+│   │   │   ├── XRamp_Global_CA_Root.crt
+│   │   │   ├── a3418fda.0 -> GTS_Root_R4.crt
+│   │   │   ├── a94d09e5.0 -> ACCVRAIZ1.crt
+│   │   │   ├── aee5f10d.0 -> Entrust.net_Premium_2048_Secure_Server_CA.crt
+│   │   │   ├── b0e59380.0 -> GlobalSign_ECC_Root_CA_-_R4.crt
+│   │   │   ├── b1159c4c.0 -> DigiCert_Assured_ID_Root_CA.crt
+│   │   │   ├── b66938e9.0 -> Secure_Global_CA.crt
+│   │   │   ├── b727005e.0 -> AffirmTrust_Premium.crt
+│   │   │   ├── b7a5b843.0 -> TWCA_Root_Certification_Authority.crt
+│   │   │   ├── bf53fb88.0 -> Microsoft_RSA_Root_Certificate_Authority_2017.crt
+│   │   │   ├── c01cdfa2.0 -> VeriSign_Universal_Root_Certification_Authority.crt
+│   │   │   ├── c01eb047.0 -> UCA_Global_G2_Root.crt
+│   │   │   ├── c28a8a30.0 -> D-TRUST_Root_Class_3_CA_2_2009.crt
+│   │   │   ├── c47d9980.0 -> Chambers_of_Commerce_Root_-_2008.crt
+│   │   │   ├── ca6e4ad9.0 -> ePKI_Root_Certification_Authority.crt
+│   │   │   ├── cbf06781.0 -> Go_Daddy_Root_Certificate_Authority_-_G2.crt
+│   │   │   ├── cc450945.0 -> Izenpe.com.crt
+│   │   │   ├── cd58d51e.0 -> Security_Communication_RootCA2.crt
+│   │   │   ├── cd8c0d63.0 -> AC_RAIZ_FNMT-RCM.crt
+│   │   │   ├── ce5e74ef.0 -> Amazon_Root_CA_1.crt
+│   │   │   ├── certSIGN_ROOT_CA.crt
+│   │   │   ├── certSIGN_Root_CA_G2.crt
+│   │   │   ├── d4dae3dd.0 -> D-TRUST_Root_Class_3_CA_2_EV_2009.crt
+│   │   │   ├── d6325660.0 -> COMODO_RSA_Certification_Authority.crt
+│   │   │   ├── d7e8dc79.0 -> QuoVadis_Root_CA_2.crt
+│   │   │   ├── d853d49e.0 -> Trustis_FPS_Root_CA.crt
+│   │   │   ├── d887a5bb.0 -> Trustwave_Global_ECC_P384_Certification_Authority.crt
+│   │   │   ├── dc4d6a89.0 -> GlobalSign_Root_CA_-_R6.crt
+│   │   │   ├── dd8e9d41.0 -> DigiCert_Global_Root_G3.crt
+│   │   │   ├── de6d66f3.0 -> Amazon_Root_CA_4.crt
+│   │   │   ├── e-Szigno_Root_CA_2017.crt
+│   │   │   ├── e113c810.0 -> Certigna.crt
+│   │   │   ├── e18bfb83.0 -> QuoVadis_Root_CA_3_G3.crt
+│   │   │   ├── e36a6752.0 -> Atos_TrustedRoot_2011.crt
+│   │   │   ├── e73d606e.0 -> OISTE_WISeKey_Global_Root_GB_CA.crt
+│   │   │   ├── e868b802.0 -> e-Szigno_Root_CA_2017.crt
+│   │   │   ├── e8de2f56.0 -> Buypass_Class_3_Root_CA.crt
+│   │   │   ├── ePKI_Root_Certification_Authority.crt
+│   │   │   ├── ee64a828.0 -> Comodo_AAA_Services_root.crt
+│   │   │   ├── eed8c118.0 -> COMODO_ECC_Certification_Authority.crt
+│   │   │   ├── ef954a4e.0 -> IdenTrust_Commercial_Root_CA_1.crt
+│   │   │   ├── emSign_ECC_Root_CA_-_C3.crt
+│   │   │   ├── emSign_ECC_Root_CA_-_G3.crt
+│   │   │   ├── emSign_Root_CA_-_C1.crt
+│   │   │   ├── emSign_Root_CA_-_G1.crt
+│   │   │   ├── f081611a.0 -> Go_Daddy_Class_2_CA.crt
+│   │   │   ├── f0c70a8d.0 -> SSL.com_EV_Root_Certification_Authority_ECC.crt
+│   │   │   ├── f249de83.0 -> Trustwave_Global_Certification_Authority.crt
+│   │   │   ├── f30dd6ad.0 -> USERTrust_ECC_Certification_Authority.crt
+│   │   │   ├── f3377b1b.0 -> Security_Communication_Root_CA.crt
+│   │   │   ├── f387163d.0 -> Starfield_Class_2_CA.crt
+│   │   │   ├── f39fc864.0 -> SecureTrust_CA.crt
+│   │   │   ├── f51bb24c.0 -> Certigna_Root_CA.crt
+│   │   │   ├── fc5a8f99.0 -> USERTrust_RSA_Certification_Authority.crt
+│   │   │   ├── fe8a2cd8.0 -> SZAFIR_ROOT_CA2.crt
+│   │   │   └── ff34af3f.0 -> TUBITAK_Kamu_SM_SSL_Kok_Sertifikasi_-_Surum_1.crt
+│   │   └── private
+│   ├── sysctl.conf
+│   ├── sysctl.d
+│   │   ├── 10-default.conf
+│   │   └── 11-nf-conntrack.conf
+│   ├── sysupgrade.conf
+│   ├── uci-defaults
+│   │   ├── 10-fstab
+│   │   ├── 10_migrate-shadow
+│   │   ├── 12_network-generate-ula
+│   │   ├── 13_fix-group-user
+│   │   ├── 14_migrate-dhcp-release
+│   │   ├── 15_odhcpd
+│   │   ├── 20_migrate-feeds
+│   │   ├── 30_luci-theme-bootstrap
+│   │   ├── 50-dnsmasq-migrate-resolv-conf-auto.sh
+│   │   └── 99-firewall
+│   ├── udhcpc.user
+│   ├── udhcpc.user.d
+│   ├── version
+│   ├── wapp_ap.conf
+│   ├── wapp_ap_ra0.conf
+│   ├── wapp_ap_ra0_default.conf
+│   ├── wapp_ap_ra1.conf
+│   ├── wapp_ap_rai0.conf
+│   ├── wapp_ap_rai0_default.conf
+│   ├── wapp_ap_rai1.conf
+│   ├── wapp_ap_raix0.conf
+│   ├── wapp_ap_raix0_default.conf
+│   ├── wapp_ap_rax0.conf
+│   ├── wapp_ap_rax0_default.conf
+│   ├── wapp_ap_rax1.conf
+│   ├── wapp_ap_wlan0.conf
+│   ├── wapp_ap_wlan0_default.conf
+│   ├── wapp_ap_wlan1.conf
+│   ├── wifi-abgn-logo_270x73.png
+│   ├── wireless
+│   │   ├── l1profile.dat
+│   │   └── mediatek
+│   │       ├── curFW
+│   │       ├── mt7915.1.dat
+│   │       ├── mt7915.2.dat
+│   │       ├── mt7915.ax8400.5g.dat
+│   │       ├── mt7915.dbdc.b0.dat
+│   │       ├── mt7915.dbdc.b1.dat
+│   │       ├── mt7915.slt.b0.dat
+│   │       ├── mt7915.slt.b1.dat
+│   │       ├── mt7986-ax4200.dbdc.b0.dat
+│   │       ├── mt7986-ax4200.dbdc.b1.dat
+│   │       ├── mt7986-ax6000.dbdc.b0.dat
+│   │       ├── mt7986-ax6000.dbdc.b1.dat
+│   │       ├── mt7986-ax7800.dbdc.b0.dat
+│   │       ├── mt7986-ax7800.dbdc.b1.dat
+│   │       ├── mt7986-ax8400.dbdc.b0.dat
+│   │       ├── mt7986-ax8400.dbdc.b1.dat
+│   │       ├── mt7986-ax8400.dbdc.b1_5g.dat
+│   │       ├── mt7986-ax8400.dbdc.b1_6g.dat
+│   │       ├── mt7986-sku-bf.dat
+│   │       ├── mt7986-sku.dat
+│   │       ├── mt7986.1.dat
+│   │       ├── mt7986.2.dat
+│   │       ├── mt7986.dbdc.b0.dat
+│   │       ├── mt7986.dbdc.b1.dat
+│   │       ├── test-mode-switch.sh
+│   │       ├── version
+│   │       ├── wifi_cert.1.dat
+│   │       └── wifi_cert.2.dat
+│   └── www
+│       ├── static
+│       │   ├── css
+│       │   │   ├── landing_page.css
+│       │   │   ├── layout.css
+│       │   │   └── normalize.min.css
+│       │   ├── favicon.ico
+│       │   ├── fonts
+│       │   │   ├── D-DIN
+│       │   │   │   ├── COPYING.txt
+│       │   │   │   ├── D-DIN-Bold.otf
+│       │   │   │   ├── D-DIN-Bold.ttf
+│       │   │   │   ├── D-DIN-Bold.woff
+│       │   │   │   ├── D-DIN-Bold.woff2
+│       │   │   │   ├── D-DIN.otf
+│       │   │   │   ├── D-DIN.ttf
+│       │   │   │   ├── D-DIN.woff
+│       │   │   │   ├── D-DIN.woff2
+│       │   │   │   ├── FONTLOG.txt
+│       │   │   │   ├── OFL-1.1.txt
+│       │   │   │   └── README
+│       │   │   ├── Roboto-Bold.ttf
+│       │   │   └── Roboto-Regular.ttf
+│       │   ├── header.jpg
+│       │   ├── images
+│       │   │   ├── gen3_label_utr_231.png
+│       │   │   └── gen3_label_utr_232.png
+│       │   └── logo.png
+│       └── templates
+│           ├── bypass_confirm.html
+│           ├── captive_portal.html
+│           ├── config_portal.html
+│           ├── form.html
+│           ├── landing_page.html
+│           ├── logo.html
+│           ├── regulatory_label.html
+│           └── success.html
+├── init
+├── lib
+│   ├── config
+│   │   └── uci.sh
+│   ├── firmware
+│   │   ├── 7981_WOCPU0_RAM_CODE_release.bin
+│   │   ├── 7986_WOCPU0_RAM_CODE_release.bin
+│   │   ├── 7986_WOCPU1_RAM_CODE_release.bin
+│   │   ├── E2P_README.txt
+│   │   ├── EthMD32.DSP.bin
+│   │   ├── EthMD32.dm.bin
+│   │   ├── MT7986_ePAeLNA_EEPROM_AX6000.bin
+│   │   ├── MT7986_ePAeLNA_EEPROM_AX8400.bin
+│   │   ├── MT7986_iPAiLNA_EEPROM_AX6000.bin
+│   │   ├── boot_rom_wifi_mcu_bin.bin.signed
+│   │   ├── e2p_prod2_source
+│   │   ├── e2p_prod3_source
+│   │   └── regulatory.db
+│   ├── functions
+│   │   ├── caldata.sh
+│   │   ├── leds.sh
+│   │   ├── migrations.sh
+│   │   ├── network.sh
+│   │   ├── preinit.sh
+│   │   ├── procd.sh
+│   │   ├── service.sh
+│   │   ├── system.sh
+│   │   └── uci-defaults.sh
+│   ├── functions.sh
+│   ├── ld-musl-aarch64.so.1 -> libc.so
+│   ├── libblkid-tiny.so
+│   ├── libblobmsg_json.so.20210516
+│   ├── libc.so
+│   ├── libfstools.so
+│   ├── libgcc_s.so.1
+│   ├── libjson_script.so.20210516
+│   ├── libkvcutil.so -> libkvcutil.so.1
+│   ├── libkvcutil.so.1 -> libkvcutil.so.1.0.0.0
+│   ├── libkvcutil.so.1.0.0.0
+│   ├── libsetlbf.so
+│   ├── libubox.so.20210516
+│   ├── libubus.so.20210630
+│   ├── libuci.so
+│   ├── libvalidate.so
+│   ├── modules
+│   │   └── 5.4.203
+│   │       ├── act_gact.ko
+│   │       ├── act_mirred.ko
+│   │       ├── act_skbedit.ko
+│   │       ├── af_key.ko
+│   │       ├── ah6.ko
+│   │       ├── air_en8811h.ko
+│   │       ├── arc4.ko
+│   │       ├── autofs4.ko
+│   │       ├── ccm.ko
+│   │       ├── cls_basic.ko
+│   │       ├── cls_flow.ko
+│   │       ├── cls_fw.ko
+│   │       ├── cls_matchall.ko
+│   │       ├── cls_route.ko
+│   │       ├── cls_tcindex.ko
+│   │       ├── cls_u32.ko
+│   │       ├── conninfra.ko
+│   │       ├── crc-ccitt.ko
+│   │       ├── crc32c_generic.ko
+│   │       ├── ctr.ko
+│   │       ├── ebt_802_3.ko
+│   │       ├── ebt_among.ko
+│   │       ├── ebt_arp.ko
+│   │       ├── ebt_arpreply.ko
+│   │       ├── ebt_dnat.ko
+│   │       ├── ebt_ip.ko
+│   │       ├── ebt_limit.ko
+│   │       ├── ebt_mark.ko
+│   │       ├── ebt_mark_m.ko
+│   │       ├── ebt_pkttype.ko
+│   │       ├── ebt_redirect.ko
+│   │       ├── ebt_snat.ko
+│   │       ├── ebt_stp.ko
+│   │       ├── ebt_vlan.ko
+│   │       ├── ebtable_broute.ko
+│   │       ├── ebtable_filter.ko
+│   │       ├── ebtable_nat.ko
+│   │       ├── ebtables.ko
+│   │       ├── em_u32.ko
+│   │       ├── esp6.ko
+│   │       ├── fat.ko
+│   │       ├── gcm.ko
+│   │       ├── gf128mul.ko
+│   │       ├── ghash-generic.ko
+│   │       ├── gpio-button-hotplug.ko
+│   │       ├── gre.ko
+│   │       ├── ip6_gre.ko
+│   │       ├── ip6_tables.ko
+│   │       ├── ip6_tunnel.ko
+│   │       ├── ip6_udp_tunnel.ko
+│   │       ├── ip6t_REJECT.ko
+│   │       ├── ip6table_filter.ko
+│   │       ├── ip6table_mangle.ko
+│   │       ├── ip_gre.ko
+│   │       ├── ip_set.ko
+│   │       ├── ip_set_bitmap_ip.ko
+│   │       ├── ip_set_bitmap_ipmac.ko
+│   │       ├── ip_set_bitmap_port.ko
+│   │       ├── ip_set_hash_ip.ko
+│   │       ├── ip_set_hash_ipmark.ko
+│   │       ├── ip_set_hash_ipport.ko
+│   │       ├── ip_set_hash_ipportip.ko
+│   │       ├── ip_set_hash_ipportnet.ko
+│   │       ├── ip_set_hash_mac.ko
+│   │       ├── ip_set_hash_net.ko
+│   │       ├── ip_set_hash_netiface.ko
+│   │       ├── ip_set_hash_netnet.ko
+│   │       ├── ip_set_hash_netport.ko
+│   │       ├── ip_set_hash_netportnet.ko
+│   │       ├── ip_set_list_set.ko
+│   │       ├── ip_tables.ko
+│   │       ├── ip_tunnel.ko
+│   │       ├── ipcomp6.ko
+│   │       ├── ipt_ECN.ko
+│   │       ├── ipt_REJECT.ko
+│   │       ├── ipt_ah.ko
+│   │       ├── iptable_filter.ko
+│   │       ├── iptable_mangle.ko
+│   │       ├── iptable_nat.ko
+│   │       ├── l2tp_core.ko
+│   │       ├── l2tp_netlink.ko
+│   │       ├── l2tp_ppp.ko
+│   │       ├── leds-gpio.ko
+│   │       ├── libata.ko
+│   │       ├── libcrc32c.ko
+│   │       ├── macsec.ko
+│   │       ├── mapfilter.ko
+│   │       ├── md4.ko
+│   │       ├── mt7915_mt_wifi.ko
+│   │       ├── mt7915_mtk_warp_proxy.ko
+│   │       ├── mt_wifi.ko
+│   │       ├── mtd_nandecctest.ko
+│   │       ├── mtd_oobtest.ko
+│   │       ├── mtd_pagetest.ko
+│   │       ├── mtd_readtest.ko
+│   │       ├── mtd_speedtest.ko
+│   │       ├── mtd_stresstest.ko
+│   │       ├── mtd_subpagetest.ko
+│   │       ├── mtd_torturetest.ko
+│   │       ├── mtfwd.ko
+│   │       ├── mtk_efuse.ko
+│   │       ├── mtk_warp.ko
+│   │       ├── mtk_warp_proxy.ko
+│   │       ├── mtkhnat.ko
+│   │       ├── nf_flow_table.ko
+│   │       ├── nf_flow_table_hw.ko
+│   │       ├── nf_log_common.ko
+│   │       ├── nf_log_ipv4.ko
+│   │       ├── nf_log_ipv6.ko
+│   │       ├── nf_nat.ko
+│   │       ├── nf_reject_ipv4.ko
+│   │       ├── nf_reject_ipv6.ko
+│   │       ├── nfnetlink.ko
+│   │       ├── nls_cp437.ko
+│   │       ├── nls_iso8859-1.ko
+│   │       ├── nls_utf8.ko
+│   │       ├── ppp_async.ko
+│   │       ├── ppp_generic.ko
+│   │       ├── ppp_mppe.ko
+│   │       ├── pppoe.ko
+│   │       ├── pppox.ko
+│   │       ├── pptp.ko
+│   │       ├── sch_hfsc.ko
+│   │       ├── sch_htb.ko
+│   │       ├── sch_ingress.ko
+│   │       ├── sch_tbf.ko
+│   │       ├── seqiv.ko
+│   │       ├── slhc.ko
+│   │       ├── tunnel6.ko
+│   │       ├── udp_tunnel.ko
+│   │       ├── vfat.ko
+│   │       ├── x_tables.ko
+│   │       ├── xfrm6_tunnel.ko
+│   │       ├── xt_CLASSIFY.ko
+│   │       ├── xt_DSCP.ko
+│   │       ├── xt_FLOWOFFLOAD.ko
+│   │       ├── xt_HL.ko
+│   │       ├── xt_LOG.ko
+│   │       ├── xt_MASQUERADE.ko
+│   │       ├── xt_REDIRECT.ko
+│   │       ├── xt_TCPMSS.ko
+│   │       ├── xt_addrtype.ko
+│   │       ├── xt_comment.ko
+│   │       ├── xt_conntrack.ko
+│   │       ├── xt_dscp.ko
+│   │       ├── xt_ecn.ko
+│   │       ├── xt_esp.ko
+│   │       ├── xt_hl.ko
+│   │       ├── xt_length.ko
+│   │       ├── xt_limit.ko
+│   │       ├── xt_mac.ko
+│   │       ├── xt_mark.ko
+│   │       ├── xt_multiport.ko
+│   │       ├── xt_nat.ko
+│   │       ├── xt_owner.ko
+│   │       ├── xt_pkttype.ko
+│   │       ├── xt_policy.ko
+│   │       ├── xt_quota.ko
+│   │       ├── xt_set.ko
+│   │       ├── xt_state.ko
+│   │       ├── xt_statistic.ko
+│   │       ├── xt_tcpmss.ko
+│   │       ├── xt_tcpudp.ko
+│   │       └── xt_time.ko
+│   ├── netifd
+│   │   ├── dhcp.script
+│   │   ├── dhcpv6.script
+│   │   ├── netifd-proto.sh
+│   │   ├── netifd-wireless.sh
+│   │   ├── ppp-down
+│   │   ├── ppp-up
+│   │   ├── ppp6-up
+│   │   ├── proto
+│   │   │   ├── dhcp.sh
+│   │   │   ├── dhcpv6.sh
+│   │   │   ├── gre.sh
+│   │   │   └── ppp.sh
+│   │   └── utils.sh
+│   ├── network
+│   │   ├── config.sh
+│   │   └── switch.sh
+│   ├── preinit
+│   │   ├── 00_preinit.conf
+│   │   ├── 02_default_set_state
+│   │   ├── 02_sysinfo
+│   │   ├── 05_set_preinit_iface
+│   │   ├── 06_set_rps_sock_flow
+│   │   ├── 10_indicate_failsafe
+│   │   ├── 10_indicate_preinit
+│   │   ├── 30_failsafe_wait
+│   │   ├── 40_run_failsafe_hook
+│   │   ├── 50_indicate_regular_preinit
+│   │   ├── 70_initramfs_test
+│   │   ├── 80_mount_root
+│   │   ├── 81_urandom_seed
+│   │   ├── 82_1_wifi_e2p
+│   │   ├── 98_10_mtk_failsafe_init
+│   │   ├── 99_10_failsafe_login
+│   │   ├── 99_10_failsafe_sshd
+│   │   └── 99_10_run_init
+│   ├── upgrade
+│   │   ├── common.sh
+│   │   ├── do_stage2
+│   │   ├── fwtool.sh
+│   │   ├── keep.d
+│   │   │   ├── base-files
+│   │   │   ├── base-files-essential
+│   │   │   ├── dnsmasq
+│   │   │   ├── luci-base
+│   │   │   ├── netifd
+│   │   │   ├── openssh-server
+│   │   │   ├── opkg
+│   │   │   └── ppp
+│   │   ├── luci-add-conffiles.sh
+│   │   ├── mmc.sh
+│   │   ├── nand.sh
+│   │   ├── platform.sh
+│   │   └── stage2
+│   └── wifi
+│       ├── mtwifi.lua
+│       └── wifi_services.lua
+├── lib64
+│   ├── config
+│   │   └── uci.sh
+│   ├── firmware
+│   │   ├── 7981_WOCPU0_RAM_CODE_release.bin
+│   │   ├── 7986_WOCPU0_RAM_CODE_release.bin
+│   │   ├── 7986_WOCPU1_RAM_CODE_release.bin
+│   │   ├── E2P_README.txt
+│   │   ├── EthMD32.DSP.bin
+│   │   ├── EthMD32.dm.bin
+│   │   ├── MT7986_ePAeLNA_EEPROM_AX6000.bin
+│   │   ├── MT7986_ePAeLNA_EEPROM_AX8400.bin
+│   │   ├── MT7986_iPAiLNA_EEPROM_AX6000.bin
+│   │   ├── boot_rom_wifi_mcu_bin.bin.signed
+│   │   ├── e2p_prod2_source
+│   │   ├── e2p_prod3_source
+│   │   └── regulatory.db
+│   ├── functions
+│   │   ├── caldata.sh
+│   │   ├── leds.sh
+│   │   ├── migrations.sh
+│   │   ├── network.sh
+│   │   ├── preinit.sh
+│   │   ├── procd.sh
+│   │   ├── service.sh
+│   │   ├── system.sh
+│   │   └── uci-defaults.sh
+│   ├── functions.sh
+│   ├── ld-musl-aarch64.so.1 -> libc.so
+│   ├── libblkid-tiny.so
+│   ├── libblobmsg_json.so.20210516
+│   ├── libc.so
+│   ├── libfstools.so
+│   ├── libgcc_s.so.1
+│   ├── libjson_script.so.20210516
+│   ├── libkvcutil.so -> libkvcutil.so.1
+│   ├── libkvcutil.so.1 -> libkvcutil.so.1.0.0.0
+│   ├── libkvcutil.so.1.0.0.0
+│   ├── libsetlbf.so
+│   ├── libubox.so.20210516
+│   ├── libubus.so.20210630
+│   ├── libuci.so
+│   ├── libvalidate.so
+│   ├── modules
+│   │   └── 5.4.203
+│   │       ├── act_gact.ko
+│   │       ├── act_mirred.ko
+│   │       ├── act_skbedit.ko
+│   │       ├── af_key.ko
+│   │       ├── ah6.ko
+│   │       ├── air_en8811h.ko
+│   │       ├── arc4.ko
+│   │       ├── autofs4.ko
+│   │       ├── ccm.ko
+│   │       ├── cls_basic.ko
+│   │       ├── cls_flow.ko
+│   │       ├── cls_fw.ko
+│   │       ├── cls_matchall.ko
+│   │       ├── cls_route.ko
+│   │       ├── cls_tcindex.ko
+│   │       ├── cls_u32.ko
+│   │       ├── conninfra.ko
+│   │       ├── crc-ccitt.ko
+│   │       ├── crc32c_generic.ko
+│   │       ├── ctr.ko
+│   │       ├── ebt_802_3.ko
+│   │       ├── ebt_among.ko
+│   │       ├── ebt_arp.ko
+│   │       ├── ebt_arpreply.ko
+│   │       ├── ebt_dnat.ko
+│   │       ├── ebt_ip.ko
+│   │       ├── ebt_limit.ko
+│   │       ├── ebt_mark.ko
+│   │       ├── ebt_mark_m.ko
+│   │       ├── ebt_pkttype.ko
+│   │       ├── ebt_redirect.ko
+│   │       ├── ebt_snat.ko
+│   │       ├── ebt_stp.ko
+│   │       ├── ebt_vlan.ko
+│   │       ├── ebtable_broute.ko
+│   │       ├── ebtable_filter.ko
+│   │       ├── ebtable_nat.ko
+│   │       ├── ebtables.ko
+│   │       ├── em_u32.ko
+│   │       ├── esp6.ko
+│   │       ├── fat.ko
+│   │       ├── gcm.ko
+│   │       ├── gf128mul.ko
+│   │       ├── ghash-generic.ko
+│   │       ├── gpio-button-hotplug.ko
+│   │       ├── gre.ko
+│   │       ├── ip6_gre.ko
+│   │       ├── ip6_tables.ko
+│   │       ├── ip6_tunnel.ko
+│   │       ├── ip6_udp_tunnel.ko
+│   │       ├── ip6t_REJECT.ko
+│   │       ├── ip6table_filter.ko
+│   │       ├── ip6table_mangle.ko
+│   │       ├── ip_gre.ko
+│   │       ├── ip_set.ko
+│   │       ├── ip_set_bitmap_ip.ko
+│   │       ├── ip_set_bitmap_ipmac.ko
+│   │       ├── ip_set_bitmap_port.ko
+│   │       ├── ip_set_hash_ip.ko
+│   │       ├── ip_set_hash_ipmark.ko
+│   │       ├── ip_set_hash_ipport.ko
+│   │       ├── ip_set_hash_ipportip.ko
+│   │       ├── ip_set_hash_ipportnet.ko
+│   │       ├── ip_set_hash_mac.ko
+│   │       ├── ip_set_hash_net.ko
+│   │       ├── ip_set_hash_netiface.ko
+│   │       ├── ip_set_hash_netnet.ko
+│   │       ├── ip_set_hash_netport.ko
+│   │       ├── ip_set_hash_netportnet.ko
+│   │       ├── ip_set_list_set.ko
+│   │       ├── ip_tables.ko
+│   │       ├── ip_tunnel.ko
+│   │       ├── ipcomp6.ko
+│   │       ├── ipt_ECN.ko
+│   │       ├── ipt_REJECT.ko
+│   │       ├── ipt_ah.ko
+│   │       ├── iptable_filter.ko
+│   │       ├── iptable_mangle.ko
+│   │       ├── iptable_nat.ko
+│   │       ├── l2tp_core.ko
+│   │       ├── l2tp_netlink.ko
+│   │       ├── l2tp_ppp.ko
+│   │       ├── leds-gpio.ko
+│   │       ├── libata.ko
+│   │       ├── libcrc32c.ko
+│   │       ├── macsec.ko
+│   │       ├── mapfilter.ko
+│   │       ├── md4.ko
+│   │       ├── mt7915_mt_wifi.ko
+│   │       ├── mt7915_mtk_warp_proxy.ko
+│   │       ├── mt_wifi.ko
+│   │       ├── mtd_nandecctest.ko
+│   │       ├── mtd_oobtest.ko
+│   │       ├── mtd_pagetest.ko
+│   │       ├── mtd_readtest.ko
+│   │       ├── mtd_speedtest.ko
+│   │       ├── mtd_stresstest.ko
+│   │       ├── mtd_subpagetest.ko
+│   │       ├── mtd_torturetest.ko
+│   │       ├── mtfwd.ko
+│   │       ├── mtk_efuse.ko
+│   │       ├── mtk_warp.ko
+│   │       ├── mtk_warp_proxy.ko
+│   │       ├── mtkhnat.ko
+│   │       ├── nf_flow_table.ko
+│   │       ├── nf_flow_table_hw.ko
+│   │       ├── nf_log_common.ko
+│   │       ├── nf_log_ipv4.ko
+│   │       ├── nf_log_ipv6.ko
+│   │       ├── nf_nat.ko
+│   │       ├── nf_reject_ipv4.ko
+│   │       ├── nf_reject_ipv6.ko
+│   │       ├── nfnetlink.ko
+│   │       ├── nls_cp437.ko
+│   │       ├── nls_iso8859-1.ko
+│   │       ├── nls_utf8.ko
+│   │       ├── ppp_async.ko
+│   │       ├── ppp_generic.ko
+│   │       ├── ppp_mppe.ko
+│   │       ├── pppoe.ko
+│   │       ├── pppox.ko
+│   │       ├── pptp.ko
+│   │       ├── sch_hfsc.ko
+│   │       ├── sch_htb.ko
+│   │       ├── sch_ingress.ko
+│   │       ├── sch_tbf.ko
+│   │       ├── seqiv.ko
+│   │       ├── slhc.ko
+│   │       ├── tunnel6.ko
+│   │       ├── udp_tunnel.ko
+│   │       ├── vfat.ko
+│   │       ├── x_tables.ko
+│   │       ├── xfrm6_tunnel.ko
+│   │       ├── xt_CLASSIFY.ko
+│   │       ├── xt_DSCP.ko
+│   │       ├── xt_FLOWOFFLOAD.ko
+│   │       ├── xt_HL.ko
+│   │       ├── xt_LOG.ko
+│   │       ├── xt_MASQUERADE.ko
+│   │       ├── xt_REDIRECT.ko
+│   │       ├── xt_TCPMSS.ko
+│   │       ├── xt_addrtype.ko
+│   │       ├── xt_comment.ko
+│   │       ├── xt_conntrack.ko
+│   │       ├── xt_dscp.ko
+│   │       ├── xt_ecn.ko
+│   │       ├── xt_esp.ko
+│   │       ├── xt_hl.ko
+│   │       ├── xt_length.ko
+│   │       ├── xt_limit.ko
+│   │       ├── xt_mac.ko
+│   │       ├── xt_mark.ko
+│   │       ├── xt_multiport.ko
+│   │       ├── xt_nat.ko
+│   │       ├── xt_owner.ko
+│   │       ├── xt_pkttype.ko
+│   │       ├── xt_policy.ko
+│   │       ├── xt_quota.ko
+│   │       ├── xt_set.ko
+│   │       ├── xt_state.ko
+│   │       ├── xt_statistic.ko
+│   │       ├── xt_tcpmss.ko
+│   │       ├── xt_tcpudp.ko
+│   │       └── xt_time.ko
+│   ├── netifd
+│   │   ├── dhcp.script
+│   │   ├── dhcpv6.script
+│   │   ├── netifd-proto.sh
+│   │   ├── netifd-wireless.sh
+│   │   ├── ppp-down
+│   │   ├── ppp-up
+│   │   ├── ppp6-up
+│   │   ├── proto
+│   │   │   ├── dhcp.sh
+│   │   │   ├── dhcpv6.sh
+│   │   │   ├── gre.sh
+│   │   │   └── ppp.sh
+│   │   └── utils.sh
+│   ├── network
+│   │   ├── config.sh
+│   │   └── switch.sh
+│   ├── preinit
+│   │   ├── 00_preinit.conf
+│   │   ├── 02_default_set_state
+│   │   ├── 02_sysinfo
+│   │   ├── 05_set_preinit_iface
+│   │   ├── 06_set_rps_sock_flow
+│   │   ├── 10_indicate_failsafe
+│   │   ├── 10_indicate_preinit
+│   │   ├── 30_failsafe_wait
+│   │   ├── 40_run_failsafe_hook
+│   │   ├── 50_indicate_regular_preinit
+│   │   ├── 70_initramfs_test
+│   │   ├── 80_mount_root
+│   │   ├── 81_urandom_seed
+│   │   ├── 82_1_wifi_e2p
+│   │   ├── 98_10_mtk_failsafe_init
+│   │   ├── 99_10_failsafe_login
+│   │   ├── 99_10_failsafe_sshd
+│   │   └── 99_10_run_init
+│   ├── upgrade
+│   │   ├── common.sh
+│   │   ├── do_stage2
+│   │   ├── fwtool.sh
+│   │   ├── keep.d
+│   │   │   ├── base-files
+│   │   │   ├── base-files-essential
+│   │   │   ├── dnsmasq
+│   │   │   ├── luci-base
+│   │   │   ├── netifd
+│   │   │   ├── openssh-server
+│   │   │   ├── opkg
+│   │   │   └── ppp
+│   │   ├── luci-add-conffiles.sh
+│   │   ├── mmc.sh
+│   │   ├── nand.sh
+│   │   ├── platform.sh
+│   │   └── stage2
+│   └── wifi
+│       ├── mtwifi.lua
+│       └── wifi_services.lua
+├── log
+├── mnt
+├── overlay
+├── proc
+├── rom
+│   └── note
+├── root
+├── sbin
+│   ├── askfirst
+│   ├── block
+│   ├── blockd
+│   ├── devmem -> ../bin/busybox
+│   ├── devstatus
+│   ├── firstboot
+│   ├── halt -> ../bin/busybox
+│   ├── hotplug-call
+│   ├── hwclock -> ../bin/busybox
+│   ├── ifconfig -> ../bin/busybox
+│   ├── ifdown -> ifup
+│   ├── ifstatus
+│   ├── ifup
+│   ├── init
+│   ├── init.i64
+│   ├── jffs2mark -> jffs2reset
+│   ├── jffs2reset
+│   ├── kmodloader
+│   ├── l1dat
+│   ├── led.sh
+│   ├── logd
+│   ├── logread
+│   ├── luci-reload
+│   ├── mkswap -> ../bin/busybox
+│   ├── mount_root
+│   ├── mtd
+│   ├── mtk_factory_rw.sh
+│   ├── mtkhnat
+│   ├── netifd
+│   ├── netsys_dbg.sh
+│   ├── pivot_root -> ../bin/busybox
+│   ├── poweroff -> ../bin/busybox
+│   ├── procd
+│   ├── reboot -> ../bin/busybox
+│   ├── reload_config
+│   ├── route -> ../bin/busybox
+│   ├── smp-mt76.sh
+│   ├── smp.sh
+│   ├── start-stop-daemon -> ../bin/busybox
+│   ├── swapoff -> ../bin/busybox
+│   ├── swapon -> ../bin/busybox
+│   ├── swconfig
+│   ├── switch_root -> ../bin/busybox
+│   ├── sysctl -> ../bin/busybox
+│   ├── sysupgrade
+│   ├── ubusd
+│   ├── uci
+│   ├── udevtrigger
+│   ├── udhcpc -> ../bin/busybox
+│   ├── upgraded
+│   ├── urandom_seed
+│   ├── urngd
+│   ├── validate_data
+│   ├── vconfig -> ../bin/busybox
+│   ├── wifi
+│   └── wifi.i64
+├── sys
+├── tmp
+├── usr
+│   ├── bin
+│   │   ├── 1905ctrl
+│   │   ├── 8021xd
+│   │   ├── EasyMesh_openwrt.sh
+│   │   ├── [ -> ../../bin/busybox
+│   │   ├── [[ -> ../../bin/busybox
+│   │   ├── ated
+│   │   ├── awk -> ../../bin/busybox
+│   │   ├── basename -> ../../bin/busybox
+│   │   ├── brsw-del.sh
+│   │   ├── bs20
+│   │   ├── bunzip2 -> ../../bin/busybox
+│   │   ├── bzcat -> ../../bin/busybox
+│   │   ├── clear -> ../../bin/busybox
+│   │   ├── cmp -> ../../bin/busybox
+│   │   ├── config_agent.lua
+│   │   ├── crontab -> ../../bin/busybox
+│   │   ├── cut -> ../../bin/busybox
+│   │   ├── datconf
+│   │   ├── dirname -> ../../bin/busybox
+│   │   ├── du -> ../../bin/busybox
+│   │   ├── env -> ../../bin/busybox
+│   │   ├── expr -> ../../bin/busybox
+│   │   ├── find -> ../../bin/busybox
+│   │   ├── flock -> ../../bin/busybox
+│   │   ├── free -> ../../bin/busybox
+│   │   ├── fwtool
+│   │   ├── getrandom
+│   │   ├── gpiodetect
+│   │   ├── gpiofind
+│   │   ├── gpioget
+│   │   ├── gpioinfo
+│   │   ├── gpiomon
+│   │   ├── gpioset
+│   │   ├── head -> ../../bin/busybox
+│   │   ├── hexdump -> ../../bin/busybox
+│   │   ├── id -> ../../bin/busybox
+│   │   ├── iperf3
+│   │   ├── iwinfo
+│   │   ├── jshn
+│   │   ├── jsonfilter
+│   │   ├── killall -> ../../bin/busybox
+│   │   ├── kvcedit
+│   │   ├── ldd -> ../../lib/libc.so
+│   │   ├── less -> ../../bin/busybox
+│   │   ├── logger -> ../../bin/busybox
+│   │   ├── lspci -> ../../bin/busybox
+│   │   ├── lsusb -> ../../bin/busybox
+│   │   ├── lua -> lua5.1
+│   │   ├── lua5.1
+│   │   ├── map_cert_script.sh
+│   │   ├── map_config_agent.lua
+│   │   ├── mapd
+│   │   ├── mapd_cli
+│   │   ├── mapd_user_iface
+│   │   ├── mbo_nr.sh
+│   │   ├── md5sum -> ../../bin/busybox
+│   │   ├── mkfifo -> ../../bin/busybox
+│   │   ├── nc -> ../../bin/busybox
+│   │   ├── nslookup -> ../../bin/busybox
+│   │   ├── nvram_get
+│   │   ├── p1905_managerd
+│   │   ├── pgrep -> ../../bin/busybox
+│   │   ├── printf -> ../../bin/busybox
+│   │   ├── readlink -> ../../bin/busybox
+│   │   ├── regs
+│   │   ├── reset -> ../../bin/busybox
+│   │   ├── resolveip
+│   │   ├── seq -> ../../bin/busybox
+│   │   ├── sha256sum -> ../../bin/busybox
+│   │   ├── signify -> usign
+│   │   ├── sort -> ../../bin/busybox
+│   │   ├── ssh-keygen
+│   │   ├── strings -> ../../bin/busybox
+│   │   ├── tail -> ../../bin/busybox
+│   │   ├── tee -> ../../bin/busybox
+│   │   ├── telnet -> ../../bin/busybox
+│   │   ├── test -> ../../bin/busybox
+│   │   ├── tftp -> ../../bin/busybox
+│   │   ├── time -> ../../bin/busybox
+│   │   ├── timeout -> ../../bin/busybox
+│   │   ├── top -> ../../bin/busybox
+│   │   ├── tp_ts_switch.sh
+│   │   ├── tr -> ../../bin/busybox
+│   │   ├── uniq -> ../../bin/busybox
+│   │   ├── uptime -> ../../bin/busybox
+│   │   ├── usign
+│   │   ├── wapp
+│   │   ├── wapp_openwrt.sh
+│   │   ├── wappctrl
+│   │   ├── wc -> ../../bin/busybox
+│   │   ├── which -> ../../bin/busybox
+│   │   ├── wifi_config_save
+│   │   ├── wificonf
+│   │   ├── wsdd2
+│   │   ├── xargs -> ../../bin/busybox
+│   │   └── yes -> ../../bin/busybox
+│   ├── lib
+│   │   ├── dnsmasq
+│   │   │   └── dhcp-script.sh
+│   │   ├── ebtables
+│   │   │   ├── libebt_802_3.so
+│   │   │   ├── libebt_among.so
+│   │   │   ├── libebt_arp.so
+│   │   │   ├── libebt_arpreply.so
+│   │   │   ├── libebt_ip.so
+│   │   │   ├── libebt_ip6.so
+│   │   │   ├── libebt_limit.so
+│   │   │   ├── libebt_log.so
+│   │   │   ├── libebt_mark.so
+│   │   │   ├── libebt_mark_m.so
+│   │   │   ├── libebt_nat.so
+│   │   │   ├── libebt_nflog.so
+│   │   │   ├── libebt_pkttype.so
+│   │   │   ├── libebt_redirect.so
+│   │   │   ├── libebt_standard.so
+│   │   │   ├── libebt_stp.so
+│   │   │   ├── libebt_string.so
+│   │   │   ├── libebt_ulog.so
+│   │   │   ├── libebt_vlan.so
+│   │   │   ├── libebtable_broute.so
+│   │   │   ├── libebtable_filter.so
+│   │   │   └── libebtable_nat.so
+│   │   ├── engines-1.1
+│   │   ├── iptables
+│   │   │   ├── libip6t_HL.so
+│   │   │   ├── libip6t_hl.so
+│   │   │   ├── libipt_ECN.so
+│   │   │   ├── libipt_TTL.so
+│   │   │   ├── libipt_ah.so
+│   │   │   ├── libipt_ttl.so
+│   │   │   ├── libxt_CLASSIFY.so
+│   │   │   ├── libxt_DSCP.so
+│   │   │   ├── libxt_TOS.so
+│   │   │   ├── libxt_dscp.so
+│   │   │   ├── libxt_ecn.so
+│   │   │   ├── libxt_esp.so
+│   │   │   ├── libxt_length.so
+│   │   │   ├── libxt_policy.so
+│   │   │   ├── libxt_statistic.so
+│   │   │   ├── libxt_tcpmss.so
+│   │   │   └── libxt_tos.so
+│   │   ├── libblkid.so.1 -> libblkid.so.1.1.0
+│   │   ├── libblkid.so.1.1.0
+│   │   ├── libbpf.so.0 -> libbpf.so.0.2.0
+│   │   ├── libbpf.so.0.2.0
+│   │   ├── libcap-ng.so -> libcap-ng.so.0.0.0
+│   │   ├── libcap-ng.so.0 -> libcap-ng.so.0.0.0
+│   │   ├── libcap-ng.so.0.0.0
+│   │   ├── libcrypto.so.1.1
+│   │   ├── libebtc.so
+│   │   ├── libelf-0.180.so
+│   │   ├── libelf.so.1 -> libelf-0.180.so
+│   │   ├── libeth_1905ops.so
+│   │   ├── libgmp.so.10 -> libgmp.so.10.4.1
+│   │   ├── libgmp.so.10.4.1
+│   │   ├── libgpiod.so.2 -> libgpiod.so.2.1.4
+│   │   ├── libgpiod.so.2.1.4
+│   │   ├── libi2c.so -> libi2c.so.0.1.1
+│   │   ├── libi2c.so.0 -> libi2c.so.0.1.1
+│   │   ├── libi2c.so.0.1.1
+│   │   ├── libip4tc.so.2 -> libip4tc.so.2.0.0
+│   │   ├── libip4tc.so.2.0.0
+│   │   ├── libip6tc.so.2 -> libip6tc.so.2.0.0
+│   │   ├── libip6tc.so.2.0.0
+│   │   ├── libipset.so.13 -> libipset.so.13.1.0
+│   │   ├── libipset.so.13.1.0
+│   │   ├── libiptext.so
+│   │   ├── libiptext4.so
+│   │   ├── libiptext6.so
+│   │   ├── libiwinfo.so.20210430
+│   │   ├── libjson-c.so.5 -> libjson-c.so.5.1.0
+│   │   ├── libjson-c.so.5.1.0
+│   │   ├── liblua.so.5.1.5
+│   │   ├── liblucihttp.so.0 -> liblucihttp.so.0.1
+│   │   ├── liblucihttp.so.0.1
+│   │   ├── libmapd_interface_client.so
+│   │   ├── libmnl.so.0 -> libmnl.so.0.2.0
+│   │   ├── libmnl.so.0.2.0
+│   │   ├── libnl-3.so.200 -> libnl-3.so.200.26.0
+│   │   ├── libnl-3.so.200.26.0
+│   │   ├── libnl-genl-3.so.200 -> libnl-genl-3.so.200.26.0
+│   │   ├── libnl-genl-3.so.200.26.0
+│   │   ├── libnl-tiny.so
+│   │   ├── libpcap.so.1 -> libpcap.so.1.9.1
+│   │   ├── libpcap.so.1.9.1
+│   │   ├── libssl.so.1.1
+│   │   ├── libuclient.so
+│   │   ├── libuuid.so.1 -> libuuid.so.1.3.0
+│   │   ├── libuuid.so.1.3.0
+│   │   ├── libxtables.so.12 -> libxtables.so.12.4.0
+│   │   ├── libxtables.so.12.4.0
+│   │   ├── libz.so -> libz.so.1
+│   │   ├── libz.so.1 -> libz.so.1.2.11
+│   │   ├── libz.so.1.2.11
+│   │   ├── lua
+│   │   │   ├── datconf.so
+│   │   │   ├── ioctl_helper.so
+│   │   │   ├── iwinfo.so
+│   │   │   ├── l1dat_parser.lua
+│   │   │   ├── ltn12.lua
+│   │   │   ├── luci
+│   │   │   │   ├── cacheloader.lua
+│   │   │   │   ├── cbi
+│   │   │   │   │   └── datatypes.lua
+│   │   │   │   ├── cbi.lua
+│   │   │   │   ├── ccache.lua
+│   │   │   │   ├── config.lua
+│   │   │   │   ├── controller
+│   │   │   │   │   ├── admin
+│   │   │   │   │   │   ├── index.lua
+│   │   │   │   │   │   └── uci.lua
+│   │   │   │   │   ├── hwnat.lua
+│   │   │   │   │   ├── ipsec.lua
+│   │   │   │   │   └── mtkwifi.lua
+│   │   │   │   ├── debug.lua
+│   │   │   │   ├── dispatcher.lua
+│   │   │   │   ├── http.lua
+│   │   │   │   ├── i18n.lua
+│   │   │   │   ├── ip.so
+│   │   │   │   ├── jsonc.so
+│   │   │   │   ├── ltn12.lua
+│   │   │   │   ├── model
+│   │   │   │   │   ├── cbi
+│   │   │   │   │   │   ├── hwnat.lua
+│   │   │   │   │   │   └── ipsec.lua
+│   │   │   │   │   ├── firewall.lua
+│   │   │   │   │   ├── network
+│   │   │   │   │   │   ├── proto_3g.lua
+│   │   │   │   │   │   ├── proto_4x6.lua
+│   │   │   │   │   │   ├── proto_6x4.lua
+│   │   │   │   │   │   ├── proto_dhcpv6.lua
+│   │   │   │   │   │   ├── proto_hnet.lua
+│   │   │   │   │   │   ├── proto_ipip.lua
+│   │   │   │   │   │   ├── proto_modemmanager.lua
+│   │   │   │   │   │   ├── proto_ncm.lua
+│   │   │   │   │   │   ├── proto_openconnect.lua
+│   │   │   │   │   │   ├── proto_ppp.lua
+│   │   │   │   │   │   ├── proto_pppossh.lua
+│   │   │   │   │   │   ├── proto_qmi.lua
+│   │   │   │   │   │   ├── proto_relay.lua
+│   │   │   │   │   │   ├── proto_vpnc.lua
+│   │   │   │   │   │   └── proto_wireguard.lua
+│   │   │   │   │   ├── network.lua
+│   │   │   │   │   └── uci.lua
+│   │   │   │   ├── sgi
+│   │   │   │   │   ├── cgi.lua
+│   │   │   │   │   └── uhttpd.lua
+│   │   │   │   ├── store.lua
+│   │   │   │   ├── sys
+│   │   │   │   │   ├── zoneinfo
+│   │   │   │   │   │   ├── tzdata.lua
+│   │   │   │   │   │   └── tzoffset.lua
+│   │   │   │   │   └── zoneinfo.lua
+│   │   │   │   ├── sys.lua
+│   │   │   │   ├── template
+│   │   │   │   │   └── parser.so
+│   │   │   │   ├── template.lua
+│   │   │   │   ├── tools
+│   │   │   │   │   └── webadmin.lua
+│   │   │   │   ├── util.lua
+│   │   │   │   ├── version.lua
+│   │   │   │   ├── view
+│   │   │   │   │   ├── admin_mtk
+│   │   │   │   │   │   ├── hwnat_status.htm
+│   │   │   │   │   │   ├── mtk_hwnat.htm
+│   │   │   │   │   │   ├── mtk_ipsec_view.htm
+│   │   │   │   │   │   ├── mtk_web_console.htm
+│   │   │   │   │   │   ├── mtk_wifi_apcli.htm
+│   │   │   │   │   │   ├── mtk_wifi_apply_reboot.htm
+│   │   │   │   │   │   ├── mtk_wifi_chip_cfg.htm
+│   │   │   │   │   │   ├── mtk_wifi_dev_cfg.htm
+│   │   │   │   │   │   ├── mtk_wifi_loading.htm
+│   │   │   │   │   │   ├── mtk_wifi_man.htm
+│   │   │   │   │   │   ├── mtk_wifi_map_ap_capabilities.htm
+│   │   │   │   │   │   ├── mtk_wifi_map_bh_link_metrics.htm
+│   │   │   │   │   │   ├── mtk_wifi_map_bss_cfg_renew.htm
+│   │   │   │   │   │   ├── mtk_wifi_map_bssinfo.htm
+│   │   │   │   │   │   ├── mtk_wifi_map_channel_planning_score.htm
+│   │   │   │   │   │   ├── mtk_wifi_map_channel_scan_result.htm
+│   │   │   │   │   │   ├── mtk_wifi_map_client_capabilities.htm
+│   │   │   │   │   │   ├── mtk_wifi_map_data_element.htm
+│   │   │   │   │   │   ├── mtk_wifi_map_display_bootstrapping_uri.htm
+│   │   │   │   │   │   ├── mtk_wifi_map_runtime_topology.htm
+│   │   │   │   │   │   ├── mtk_wifi_multi_ap.htm
+│   │   │   │   │   │   ├── mtk_wifi_overview.htm
+│   │   │   │   │   │   └── mtk_wifi_vif_cfg.htm
+│   │   │   │   │   ├── cbi
+│   │   │   │   │   │   ├── browser.htm
+│   │   │   │   │   │   ├── button.htm
+│   │   │   │   │   │   ├── cell_valuefooter.htm
+│   │   │   │   │   │   ├── cell_valueheader.htm
+│   │   │   │   │   │   ├── compound.htm
+│   │   │   │   │   │   ├── delegator.htm
+│   │   │   │   │   │   ├── dropdown.htm
+│   │   │   │   │   │   ├── dvalue.htm
+│   │   │   │   │   │   ├── dynlist.htm
+│   │   │   │   │   │   ├── error.htm
+│   │   │   │   │   │   ├── firewall_zonelist.htm
+│   │   │   │   │   │   ├── footer.htm
+│   │   │   │   │   │   ├── full_valuefooter.htm
+│   │   │   │   │   │   ├── full_valueheader.htm
+│   │   │   │   │   │   ├── fvalue.htm
+│   │   │   │   │   │   ├── header.htm
+│   │   │   │   │   │   ├── ipaddr.htm
+│   │   │   │   │   │   ├── lvalue.htm
+│   │   │   │   │   │   ├── map.htm
+│   │   │   │   │   │   ├── mvalue.htm
+│   │   │   │   │   │   ├── network_ifacelist.htm
+│   │   │   │   │   │   ├── network_netinfo.htm
+│   │   │   │   │   │   ├── network_netlist.htm
+│   │   │   │   │   │   ├── nsection.htm
+│   │   │   │   │   │   ├── nullsection.htm
+│   │   │   │   │   │   ├── simpleform.htm
+│   │   │   │   │   │   ├── tabcontainer.htm
+│   │   │   │   │   │   ├── tblsection.htm
+│   │   │   │   │   │   ├── tsection.htm
+│   │   │   │   │   │   ├── tvalue.htm
+│   │   │   │   │   │   ├── ucisection.htm
+│   │   │   │   │   │   ├── upload.htm
+│   │   │   │   │   │   ├── value.htm
+│   │   │   │   │   │   ├── valuefooter.htm
+│   │   │   │   │   │   ├── valueheader.htm
+│   │   │   │   │   │   └── wireless_modefreq.htm
+│   │   │   │   │   ├── csrftoken.htm
+│   │   │   │   │   ├── empty_node_placeholder.htm
+│   │   │   │   │   ├── error404.htm
+│   │   │   │   │   ├── error500.htm
+│   │   │   │   │   ├── footer.htm
+│   │   │   │   │   ├── header.htm
+│   │   │   │   │   ├── indexer.htm
+│   │   │   │   │   ├── sysauth.htm
+│   │   │   │   │   ├── themes
+│   │   │   │   │   │   ├── bootstrap
+│   │   │   │   │   │   │   ├── footer.htm
+│   │   │   │   │   │   │   ├── header.htm
+│   │   │   │   │   │   │   └── sysauth.htm
+│   │   │   │   │   │   ├── bootstrap-dark
+│   │   │   │   │   │   │   ├── footer.htm
+│   │   │   │   │   │   │   ├── header.htm
+│   │   │   │   │   │   │   └── sysauth.htm
+│   │   │   │   │   │   └── bootstrap-light
+│   │   │   │   │   │       ├── footer.htm
+│   │   │   │   │   │       ├── header.htm
+│   │   │   │   │   │       └── sysauth.htm
+│   │   │   │   │   └── view.htm
+│   │   │   │   └── xml.lua
+│   │   │   ├── lucihttp.so
+│   │   │   ├── map_helper.so
+│   │   │   ├── mime
+│   │   │   │   └── core.so -> ../mime-1.0.3.so
+│   │   │   ├── mime-1.0.3.so
+│   │   │   ├── mime.lua
+│   │   │   ├── mtkwifi.lua
+│   │   │   ├── nixio
+│   │   │   │   ├── fs.lua
+│   │   │   │   └── util.lua
+│   │   │   ├── nixio.so
+│   │   │   ├── shuci.lua
+│   │   │   ├── socket
+│   │   │   │   ├── core.so -> ../socket-3.0-rc1.so
+│   │   │   │   ├── ftp.lua
+│   │   │   │   ├── headers.lua
+│   │   │   │   ├── http.lua
+│   │   │   │   ├── smtp.lua
+│   │   │   │   ├── tp.lua
+│   │   │   │   ├── unix.so
+│   │   │   │   └── url.lua
+│   │   │   ├── socket-3.0-rc1.so
+│   │   │   ├── socket.lua
+│   │   │   ├── ubus.so
+│   │   │   └── wps_action.lua
+│   │   ├── opkg
+│   │   │   ├── info
+│   │   │   │   ├── 1905daemon.control
+│   │   │   │   ├── 1905daemon.list
+│   │   │   │   ├── 1905daemon.prerm
+│   │   │   │   ├── 8021xd.control
+│   │   │   │   ├── 8021xd.list
+│   │   │   │   ├── 8021xd.prerm
+│   │   │   │   ├── ated_ext.control
+│   │   │   │   ├── ated_ext.list
+│   │   │   │   ├── ated_ext.prerm
+│   │   │   │   ├── base-files.conffiles
+│   │   │   │   ├── base-files.control
+│   │   │   │   ├── base-files.list
+│   │   │   │   ├── base-files.prerm
+│   │   │   │   ├── block-mount.control
+│   │   │   │   ├── block-mount.list
+│   │   │   │   ├── block-mount.prerm
+│   │   │   │   ├── blockd.control
+│   │   │   │   ├── blockd.list
+│   │   │   │   ├── blockd.prerm
+│   │   │   │   ├── busybox.control
+│   │   │   │   ├── busybox.list
+│   │   │   │   ├── busybox.prerm
+│   │   │   │   ├── ca-certificates.control
+│   │   │   │   ├── ca-certificates.list
+│   │   │   │   ├── ca-certificates.prerm
+│   │   │   │   ├── cgi-io.control
+│   │   │   │   ├── cgi-io.list
+│   │   │   │   ├── cgi-io.prerm
+│   │   │   │   ├── datconf-lua.control
+│   │   │   │   ├── datconf-lua.list
+│   │   │   │   ├── datconf-lua.prerm
+│   │   │   │   ├── datconf.control
+│   │   │   │   ├── datconf.list
+│   │   │   │   ├── datconf.prerm
+│   │   │   │   ├── dnsmasq.conffiles
+│   │   │   │   ├── dnsmasq.control
+│   │   │   │   ├── dnsmasq.list
+│   │   │   │   ├── dnsmasq.prerm
+│   │   │   │   ├── ebtables.control
+│   │   │   │   ├── ebtables.list
+│   │   │   │   ├── ebtables.prerm
+│   │   │   │   ├── ethtool.control
+│   │   │   │   ├── ethtool.list
+│   │   │   │   ├── ethtool.prerm
+│   │   │   │   ├── fstools.control
+│   │   │   │   ├── fstools.list
+│   │   │   │   ├── fstools.prerm
+│   │   │   │   ├── fwtool.control
+│   │   │   │   ├── fwtool.list
+│   │   │   │   ├── fwtool.prerm
+│   │   │   │   ├── getrandom.control
+│   │   │   │   ├── getrandom.list
+│   │   │   │   ├── getrandom.prerm
+│   │   │   │   ├── gpiod-tools.control
+│   │   │   │   ├── gpiod-tools.list
+│   │   │   │   ├── gpiod-tools.prerm
+│   │   │   │   ├── gre.control
+│   │   │   │   ├── gre.list
+│   │   │   │   ├── gre.prerm
+│   │   │   │   ├── i2c-tools.control
+│   │   │   │   ├── i2c-tools.list
+│   │   │   │   ├── i2c-tools.prerm
+│   │   │   │   ├── ip-bridge.control
+│   │   │   │   ├── ip-bridge.list
+│   │   │   │   ├── ip-bridge.prerm
+│   │   │   │   ├── ip-full.control
+│   │   │   │   ├── ip-full.list
+│   │   │   │   ├── ip-full.prerm
+│   │   │   │   ├── ip6tables.control
+│   │   │   │   ├── ip6tables.list
+│   │   │   │   ├── ip6tables.prerm
+│   │   │   │   ├── iperf3.control
+│   │   │   │   ├── iperf3.list
+│   │   │   │   ├── iperf3.prerm
+│   │   │   │   ├── ipset.control
+│   │   │   │   ├── ipset.list
+│   │   │   │   ├── ipset.prerm
+│   │   │   │   ├── iptables-mod-ipopt.control
+│   │   │   │   ├── iptables-mod-ipopt.list
+│   │   │   │   ├── iptables-mod-ipopt.prerm
+│   │   │   │   ├── iptables-mod-ipsec.control
+│   │   │   │   ├── iptables-mod-ipsec.list
+│   │   │   │   ├── iptables-mod-ipsec.prerm
+│   │   │   │   ├── iptables.control
+│   │   │   │   ├── iptables.list
+│   │   │   │   ├── iptables.prerm
+│   │   │   │   ├── iw.control
+│   │   │   │   ├── iw.list
+│   │   │   │   ├── iw.prerm
+│   │   │   │   ├── iwinfo.control
+│   │   │   │   ├── iwinfo.list
+│   │   │   │   ├── iwinfo.prerm
+│   │   │   │   ├── jshn.control
+│   │   │   │   ├── jshn.list
+│   │   │   │   ├── jshn.prerm
+│   │   │   │   ├── jsonfilter.control
+│   │   │   │   ├── jsonfilter.list
+│   │   │   │   ├── jsonfilter.prerm
+│   │   │   │   ├── kernel.control
+│   │   │   │   ├── kernel.list
+│   │   │   │   ├── kernel.prerm
+│   │   │   │   ├── kmod-ata-core.control
+│   │   │   │   ├── kmod-ata-core.list
+│   │   │   │   ├── kmod-ata-core.prerm
+│   │   │   │   ├── kmod-conninfra.control
+│   │   │   │   ├── kmod-conninfra.list
+│   │   │   │   ├── kmod-conninfra.prerm
+│   │   │   │   ├── kmod-crypto-acompress.control
+│   │   │   │   ├── kmod-crypto-acompress.list
+│   │   │   │   ├── kmod-crypto-acompress.prerm
+│   │   │   │   ├── kmod-crypto-aead.control
+│   │   │   │   ├── kmod-crypto-aead.list
+│   │   │   │   ├── kmod-crypto-aead.prerm
+│   │   │   │   ├── kmod-crypto-arc4.control
+│   │   │   │   ├── kmod-crypto-arc4.list
+│   │   │   │   ├── kmod-crypto-arc4.prerm
+│   │   │   │   ├── kmod-crypto-authenc.control
+│   │   │   │   ├── kmod-crypto-authenc.list
+│   │   │   │   ├── kmod-crypto-authenc.prerm
+│   │   │   │   ├── kmod-crypto-cbc.control
+│   │   │   │   ├── kmod-crypto-cbc.list
+│   │   │   │   ├── kmod-crypto-cbc.prerm
+│   │   │   │   ├── kmod-crypto-ccm.control
+│   │   │   │   ├── kmod-crypto-ccm.list
+│   │   │   │   ├── kmod-crypto-ccm.prerm
+│   │   │   │   ├── kmod-crypto-cmac.control
+│   │   │   │   ├── kmod-crypto-cmac.list
+│   │   │   │   ├── kmod-crypto-cmac.prerm
+│   │   │   │   ├── kmod-crypto-crc32c.control
+│   │   │   │   ├── kmod-crypto-crc32c.list
+│   │   │   │   ├── kmod-crypto-crc32c.prerm
+│   │   │   │   ├── kmod-crypto-ctr.control
+│   │   │   │   ├── kmod-crypto-ctr.list
+│   │   │   │   ├── kmod-crypto-ctr.prerm
+│   │   │   │   ├── kmod-crypto-deflate.control
+│   │   │   │   ├── kmod-crypto-deflate.list
+│   │   │   │   ├── kmod-crypto-deflate.prerm
+│   │   │   │   ├── kmod-crypto-des.control
+│   │   │   │   ├── kmod-crypto-des.list
+│   │   │   │   ├── kmod-crypto-des.prerm
+│   │   │   │   ├── kmod-crypto-ecb.control
+│   │   │   │   ├── kmod-crypto-ecb.list
+│   │   │   │   ├── kmod-crypto-ecb.prerm
+│   │   │   │   ├── kmod-crypto-echainiv.control
+│   │   │   │   ├── kmod-crypto-echainiv.list
+│   │   │   │   ├── kmod-crypto-echainiv.prerm
+│   │   │   │   ├── kmod-crypto-gcm.control
+│   │   │   │   ├── kmod-crypto-gcm.list
+│   │   │   │   ├── kmod-crypto-gcm.prerm
+│   │   │   │   ├── kmod-crypto-gf128.control
+│   │   │   │   ├── kmod-crypto-gf128.list
+│   │   │   │   ├── kmod-crypto-gf128.prerm
+│   │   │   │   ├── kmod-crypto-ghash.control
+│   │   │   │   ├── kmod-crypto-ghash.list
+│   │   │   │   ├── kmod-crypto-ghash.prerm
+│   │   │   │   ├── kmod-crypto-hash.control
+│   │   │   │   ├── kmod-crypto-hash.list
+│   │   │   │   ├── kmod-crypto-hash.prerm
+│   │   │   │   ├── kmod-crypto-hmac.control
+│   │   │   │   ├── kmod-crypto-hmac.list
+│   │   │   │   ├── kmod-crypto-hmac.prerm
+│   │   │   │   ├── kmod-crypto-manager.control
+│   │   │   │   ├── kmod-crypto-manager.list
+│   │   │   │   ├── kmod-crypto-manager.prerm
+│   │   │   │   ├── kmod-crypto-md4.control
+│   │   │   │   ├── kmod-crypto-md4.list
+│   │   │   │   ├── kmod-crypto-md4.prerm
+│   │   │   │   ├── kmod-crypto-md5.control
+│   │   │   │   ├── kmod-crypto-md5.list
+│   │   │   │   ├── kmod-crypto-md5.prerm
+│   │   │   │   ├── kmod-crypto-null.control
+│   │   │   │   ├── kmod-crypto-null.list
+│   │   │   │   ├── kmod-crypto-null.prerm
+│   │   │   │   ├── kmod-crypto-pcompress.control
+│   │   │   │   ├── kmod-crypto-pcompress.list
+│   │   │   │   ├── kmod-crypto-pcompress.prerm
+│   │   │   │   ├── kmod-crypto-rng.control
+│   │   │   │   ├── kmod-crypto-rng.list
+│   │   │   │   ├── kmod-crypto-rng.prerm
+│   │   │   │   ├── kmod-crypto-seqiv.control
+│   │   │   │   ├── kmod-crypto-seqiv.list
+│   │   │   │   ├── kmod-crypto-seqiv.prerm
+│   │   │   │   ├── kmod-crypto-sha1.control
+│   │   │   │   ├── kmod-crypto-sha1.list
+│   │   │   │   ├── kmod-crypto-sha1.prerm
+│   │   │   │   ├── kmod-crypto-sha256.control
+│   │   │   │   ├── kmod-crypto-sha256.list
+│   │   │   │   ├── kmod-crypto-sha256.prerm
+│   │   │   │   ├── kmod-crypto-sha512.control
+│   │   │   │   ├── kmod-crypto-sha512.list
+│   │   │   │   ├── kmod-crypto-sha512.prerm
+│   │   │   │   ├── kmod-ebtables-ipv4.control
+│   │   │   │   ├── kmod-ebtables-ipv4.list
+│   │   │   │   ├── kmod-ebtables-ipv4.prerm
+│   │   │   │   ├── kmod-ebtables.control
+│   │   │   │   ├── kmod-ebtables.list
+│   │   │   │   ├── kmod-ebtables.prerm
+│   │   │   │   ├── kmod-fs-autofs4.control
+│   │   │   │   ├── kmod-fs-autofs4.list
+│   │   │   │   ├── kmod-fs-autofs4.prerm
+│   │   │   │   ├── kmod-fs-vfat.control
+│   │   │   │   ├── kmod-fs-vfat.list
+│   │   │   │   ├── kmod-fs-vfat.prerm
+│   │   │   │   ├── kmod-gpio-button-hotplug.control
+│   │   │   │   ├── kmod-gpio-button-hotplug.list
+│   │   │   │   ├── kmod-gpio-button-hotplug.prerm
+│   │   │   │   ├── kmod-gre.control
+│   │   │   │   ├── kmod-gre.list
+│   │   │   │   ├── kmod-gre.prerm
+│   │   │   │   ├── kmod-gre6.control
+│   │   │   │   ├── kmod-gre6.list
+│   │   │   │   ├── kmod-gre6.prerm
+│   │   │   │   ├── kmod-ip6-tunnel.control
+│   │   │   │   ├── kmod-ip6-tunnel.list
+│   │   │   │   ├── kmod-ip6-tunnel.prerm
+│   │   │   │   ├── kmod-ip6tables.control
+│   │   │   │   ├── kmod-ip6tables.list
+│   │   │   │   ├── kmod-ip6tables.prerm
+│   │   │   │   ├── kmod-ipsec.control
+│   │   │   │   ├── kmod-ipsec.list
+│   │   │   │   ├── kmod-ipsec.prerm
+│   │   │   │   ├── kmod-ipsec4.control
+│   │   │   │   ├── kmod-ipsec4.list
+│   │   │   │   ├── kmod-ipsec4.prerm
+│   │   │   │   ├── kmod-ipsec6.control
+│   │   │   │   ├── kmod-ipsec6.list
+│   │   │   │   ├── kmod-ipsec6.prerm
+│   │   │   │   ├── kmod-ipt-conntrack.control
+│   │   │   │   ├── kmod-ipt-conntrack.list
+│   │   │   │   ├── kmod-ipt-conntrack.prerm
+│   │   │   │   ├── kmod-ipt-core.control
+│   │   │   │   ├── kmod-ipt-core.list
+│   │   │   │   ├── kmod-ipt-core.prerm
+│   │   │   │   ├── kmod-ipt-extra.control
+│   │   │   │   ├── kmod-ipt-extra.list
+│   │   │   │   ├── kmod-ipt-extra.prerm
+│   │   │   │   ├── kmod-ipt-ipopt.control
+│   │   │   │   ├── kmod-ipt-ipopt.list
+│   │   │   │   ├── kmod-ipt-ipopt.prerm
+│   │   │   │   ├── kmod-ipt-ipsec.control
+│   │   │   │   ├── kmod-ipt-ipsec.list
+│   │   │   │   ├── kmod-ipt-ipsec.prerm
+│   │   │   │   ├── kmod-ipt-ipset.control
+│   │   │   │   ├── kmod-ipt-ipset.list
+│   │   │   │   ├── kmod-ipt-ipset.prerm
+│   │   │   │   ├── kmod-ipt-nat.control
+│   │   │   │   ├── kmod-ipt-nat.list
+│   │   │   │   ├── kmod-ipt-nat.prerm
+│   │   │   │   ├── kmod-ipt-offload.control
+│   │   │   │   ├── kmod-ipt-offload.list
+│   │   │   │   ├── kmod-ipt-offload.prerm
+│   │   │   │   ├── kmod-iptunnel.control
+│   │   │   │   ├── kmod-iptunnel.list
+│   │   │   │   ├── kmod-iptunnel.prerm
+│   │   │   │   ├── kmod-iptunnel4.control
+│   │   │   │   ├── kmod-iptunnel4.list
+│   │   │   │   ├── kmod-iptunnel4.prerm
+│   │   │   │   ├── kmod-iptunnel6.control
+│   │   │   │   ├── kmod-iptunnel6.list
+│   │   │   │   ├── kmod-iptunnel6.prerm
+│   │   │   │   ├── kmod-l2tp.control
+│   │   │   │   ├── kmod-l2tp.list
+│   │   │   │   ├── kmod-l2tp.prerm
+│   │   │   │   ├── kmod-leds-gpio.control
+│   │   │   │   ├── kmod-leds-gpio.list
+│   │   │   │   ├── kmod-leds-gpio.prerm
+│   │   │   │   ├── kmod-lib-crc-ccitt.control
+│   │   │   │   ├── kmod-lib-crc-ccitt.list
+│   │   │   │   ├── kmod-lib-crc-ccitt.prerm
+│   │   │   │   ├── kmod-lib-crc32c.control
+│   │   │   │   ├── kmod-lib-crc32c.list
+│   │   │   │   ├── kmod-lib-crc32c.prerm
+│   │   │   │   ├── kmod-lib-zlib-deflate.control
+│   │   │   │   ├── kmod-lib-zlib-deflate.list
+│   │   │   │   ├── kmod-lib-zlib-deflate.prerm
+│   │   │   │   ├── kmod-lib-zlib-inflate.control
+│   │   │   │   ├── kmod-lib-zlib-inflate.list
+│   │   │   │   ├── kmod-lib-zlib-inflate.prerm
+│   │   │   │   ├── kmod-macsec.control
+│   │   │   │   ├── kmod-macsec.list
+│   │   │   │   ├── kmod-macsec.prerm
+│   │   │   │   ├── kmod-mapfilter.control
+│   │   │   │   ├── kmod-mapfilter.list
+│   │   │   │   ├── kmod-mapfilter.prerm
+│   │   │   │   ├── kmod-mediatek_hnat.control
+│   │   │   │   ├── kmod-mediatek_hnat.list
+│   │   │   │   ├── kmod-mediatek_hnat.prerm
+│   │   │   │   ├── kmod-mppe.control
+│   │   │   │   ├── kmod-mppe.list
+│   │   │   │   ├── kmod-mppe.prerm
+│   │   │   │   ├── kmod-mt7915.control
+│   │   │   │   ├── kmod-mt7915.list
+│   │   │   │   ├── kmod-mt7915.prerm
+│   │   │   │   ├── kmod-mt_wifi.control
+│   │   │   │   ├── kmod-mt_wifi.list
+│   │   │   │   ├── kmod-mt_wifi.prerm
+│   │   │   │   ├── kmod-mtdtests.control
+│   │   │   │   ├── kmod-mtdtests.list
+│   │   │   │   ├── kmod-mtdtests.prerm
+│   │   │   │   ├── kmod-mtfwd.control
+│   │   │   │   ├── kmod-mtfwd.list
+│   │   │   │   ├── kmod-mtfwd.prerm
+│   │   │   │   ├── kmod-mtk-efuse-nl-drv.control
+│   │   │   │   ├── kmod-mtk-efuse-nl-drv.list
+│   │   │   │   ├── kmod-mtk-efuse-nl-drv.prerm
+│   │   │   │   ├── kmod-nf-conntrack.control
+│   │   │   │   ├── kmod-nf-conntrack.list
+│   │   │   │   ├── kmod-nf-conntrack.prerm
+│   │   │   │   ├── kmod-nf-conntrack6.control
+│   │   │   │   ├── kmod-nf-conntrack6.list
+│   │   │   │   ├── kmod-nf-conntrack6.prerm
+│   │   │   │   ├── kmod-nf-flow.control
+│   │   │   │   ├── kmod-nf-flow.list
+│   │   │   │   ├── kmod-nf-flow.prerm
+│   │   │   │   ├── kmod-nf-ipt.control
+│   │   │   │   ├── kmod-nf-ipt.list
+│   │   │   │   ├── kmod-nf-ipt.prerm
+│   │   │   │   ├── kmod-nf-ipt6.control
+│   │   │   │   ├── kmod-nf-ipt6.list
+│   │   │   │   ├── kmod-nf-ipt6.prerm
+│   │   │   │   ├── kmod-nf-nat.control
+│   │   │   │   ├── kmod-nf-nat.list
+│   │   │   │   ├── kmod-nf-nat.prerm
+│   │   │   │   ├── kmod-nf-reject.control
+│   │   │   │   ├── kmod-nf-reject.list
+│   │   │   │   ├── kmod-nf-reject.prerm
+│   │   │   │   ├── kmod-nf-reject6.control
+│   │   │   │   ├── kmod-nf-reject6.list
+│   │   │   │   ├── kmod-nf-reject6.prerm
+│   │   │   │   ├── kmod-nfnetlink.control
+│   │   │   │   ├── kmod-nfnetlink.list
+│   │   │   │   ├── kmod-nfnetlink.prerm
+│   │   │   │   ├── kmod-nls-base.control
+│   │   │   │   ├── kmod-nls-base.list
+│   │   │   │   ├── kmod-nls-base.prerm
+│   │   │   │   ├── kmod-nls-cp437.control
+│   │   │   │   ├── kmod-nls-cp437.list
+│   │   │   │   ├── kmod-nls-cp437.prerm
+│   │   │   │   ├── kmod-nls-iso8859-1.control
+│   │   │   │   ├── kmod-nls-iso8859-1.list
+│   │   │   │   ├── kmod-nls-iso8859-1.prerm
+│   │   │   │   ├── kmod-nls-utf8.control
+│   │   │   │   ├── kmod-nls-utf8.list
+│   │   │   │   ├── kmod-nls-utf8.prerm
+│   │   │   │   ├── kmod-phy-air_en8811h.control
+│   │   │   │   ├── kmod-phy-air_en8811h.list
+│   │   │   │   ├── kmod-phy-air_en8811h.prerm
+│   │   │   │   ├── kmod-ppp.control
+│   │   │   │   ├── kmod-ppp.list
+│   │   │   │   ├── kmod-ppp.prerm
+│   │   │   │   ├── kmod-pppoe.control
+│   │   │   │   ├── kmod-pppoe.list
+│   │   │   │   ├── kmod-pppoe.prerm
+│   │   │   │   ├── kmod-pppol2tp.control
+│   │   │   │   ├── kmod-pppol2tp.list
+│   │   │   │   ├── kmod-pppol2tp.prerm
+│   │   │   │   ├── kmod-pppox.control
+│   │   │   │   ├── kmod-pppox.list
+│   │   │   │   ├── kmod-pppox.prerm
+│   │   │   │   ├── kmod-pptp.control
+│   │   │   │   ├── kmod-pptp.list
+│   │   │   │   ├── kmod-pptp.prerm
+│   │   │   │   ├── kmod-sched-cake.control
+│   │   │   │   ├── kmod-sched-cake.list
+│   │   │   │   ├── kmod-sched-cake.prerm
+│   │   │   │   ├── kmod-sched-core.control
+│   │   │   │   ├── kmod-sched-core.list
+│   │   │   │   ├── kmod-sched-core.prerm
+│   │   │   │   ├── kmod-scsi-core.control
+│   │   │   │   ├── kmod-scsi-core.list
+│   │   │   │   ├── kmod-scsi-core.prerm
+│   │   │   │   ├── kmod-slhc.control
+│   │   │   │   ├── kmod-slhc.list
+│   │   │   │   ├── kmod-slhc.prerm
+│   │   │   │   ├── kmod-udptunnel4.control
+│   │   │   │   ├── kmod-udptunnel4.list
+│   │   │   │   ├── kmod-udptunnel4.prerm
+│   │   │   │   ├── kmod-udptunnel6.control
+│   │   │   │   ├── kmod-udptunnel6.list
+│   │   │   │   ├── kmod-udptunnel6.prerm
+│   │   │   │   ├── kmod-usb-core.control
+│   │   │   │   ├── kmod-usb-core.list
+│   │   │   │   ├── kmod-usb-core.prerm
+│   │   │   │   ├── kmod-usb-ehci.control
+│   │   │   │   ├── kmod-usb-ehci.list
+│   │   │   │   ├── kmod-usb-ehci.prerm
+│   │   │   │   ├── kmod-usb-ohci.control
+│   │   │   │   ├── kmod-usb-ohci.list
+│   │   │   │   ├── kmod-usb-ohci.prerm
+│   │   │   │   ├── kmod-usb-storage.control
+│   │   │   │   ├── kmod-usb-storage.list
+│   │   │   │   ├── kmod-usb-storage.prerm
+│   │   │   │   ├── kmod-usb2.control
+│   │   │   │   ├── kmod-usb2.list
+│   │   │   │   ├── kmod-usb2.prerm
+│   │   │   │   ├── kmod-usb3.control
+│   │   │   │   ├── kmod-usb3.list
+│   │   │   │   ├── kmod-usb3.prerm
+│   │   │   │   ├── kmod-warp.control
+│   │   │   │   ├── kmod-warp.list
+│   │   │   │   ├── kmod-warp.prerm
+│   │   │   │   ├── kvcedit.control
+│   │   │   │   ├── kvcedit.list
+│   │   │   │   ├── kvcedit.prerm
+│   │   │   │   ├── libblkid1.control
+│   │   │   │   ├── libblkid1.list
+│   │   │   │   ├── libblkid1.prerm
+│   │   │   │   ├── libblobmsg-json20210516.control
+│   │   │   │   ├── libblobmsg-json20210516.list
+│   │   │   │   ├── libblobmsg-json20210516.prerm
+│   │   │   │   ├── libbpf0.control
+│   │   │   │   ├── libbpf0.list
+│   │   │   │   ├── libbpf0.prerm
+│   │   │   │   ├── libc.control
+│   │   │   │   ├── libc.list
+│   │   │   │   ├── libc.prerm
+│   │   │   │   ├── libcap-ng.control
+│   │   │   │   ├── libcap-ng.list
+│   │   │   │   ├── libcap-ng.prerm
+│   │   │   │   ├── libelf1.control
+│   │   │   │   ├── libelf1.list
+│   │   │   │   ├── libelf1.prerm
+│   │   │   │   ├── libgcc1.control
+│   │   │   │   ├── libgcc1.list
+│   │   │   │   ├── libgcc1.prerm
+│   │   │   │   ├── libgmp10.control
+│   │   │   │   ├── libgmp10.list
+│   │   │   │   ├── libgmp10.prerm
+│   │   │   │   ├── libgpiod.control
+│   │   │   │   ├── libgpiod.list
+│   │   │   │   ├── libgpiod.prerm
+│   │   │   │   ├── libi2c.control
+│   │   │   │   ├── libi2c.list
+│   │   │   │   ├── libi2c.prerm
+│   │   │   │   ├── libip4tc2.control
+│   │   │   │   ├── libip4tc2.list
+│   │   │   │   ├── libip4tc2.prerm
+│   │   │   │   ├── libip6tc2.control
+│   │   │   │   ├── libip6tc2.list
+│   │   │   │   ├── libip6tc2.prerm
+│   │   │   │   ├── libipset13.control
+│   │   │   │   ├── libipset13.list
+│   │   │   │   ├── libipset13.prerm
+│   │   │   │   ├── libiwinfo-data.control
+│   │   │   │   ├── libiwinfo-data.list
+│   │   │   │   ├── libiwinfo-data.prerm
+│   │   │   │   ├── libiwinfo-lua.control
+│   │   │   │   ├── libiwinfo-lua.list
+│   │   │   │   ├── libiwinfo-lua.prerm
+│   │   │   │   ├── libiwinfo20210430.control
+│   │   │   │   ├── libiwinfo20210430.list
+│   │   │   │   ├── libiwinfo20210430.prerm
+│   │   │   │   ├── libjson-c5.control
+│   │   │   │   ├── libjson-c5.list
+│   │   │   │   ├── libjson-c5.prerm
+│   │   │   │   ├── libjson-script20210516.control
+│   │   │   │   ├── libjson-script20210516.list
+│   │   │   │   ├── libjson-script20210516.prerm
+│   │   │   │   ├── libkvcutil.control
+│   │   │   │   ├── libkvcutil.list
+│   │   │   │   ├── libkvcutil.prerm
+│   │   │   │   ├── liblua5.1.5.control
+│   │   │   │   ├── liblua5.1.5.list
+│   │   │   │   ├── liblua5.1.5.prerm
+│   │   │   │   ├── liblucihttp-lua.control
+│   │   │   │   ├── liblucihttp-lua.list
+│   │   │   │   ├── liblucihttp-lua.prerm
+│   │   │   │   ├── liblucihttp0.control
+│   │   │   │   ├── liblucihttp0.list
+│   │   │   │   ├── liblucihttp0.prerm
+│   │   │   │   ├── libmapd.control
+│   │   │   │   ├── libmapd.list
+│   │   │   │   ├── libmapd.prerm
+│   │   │   │   ├── libmnl0.control
+│   │   │   │   ├── libmnl0.list
+│   │   │   │   ├── libmnl0.prerm
+│   │   │   │   ├── libnl-core200.control
+│   │   │   │   ├── libnl-core200.list
+│   │   │   │   ├── libnl-core200.prerm
+│   │   │   │   ├── libnl-genl200.control
+│   │   │   │   ├── libnl-genl200.list
+│   │   │   │   ├── libnl-genl200.prerm
+│   │   │   │   ├── libnl-tiny1.control
+│   │   │   │   ├── libnl-tiny1.list
+│   │   │   │   ├── libnl-tiny1.prerm
+│   │   │   │   ├── libopenssl1.1.control
+│   │   │   │   ├── libopenssl1.1.list
+│   │   │   │   ├── libopenssl1.1.prerm
+│   │   │   │   ├── libpcap1.control
+│   │   │   │   ├── libpcap1.list
+│   │   │   │   ├── libpcap1.prerm
+│   │   │   │   ├── libpthread.control
+│   │   │   │   ├── libpthread.list
+│   │   │   │   ├── libpthread.prerm
+│   │   │   │   ├── librt.control
+│   │   │   │   ├── librt.list
+│   │   │   │   ├── librt.prerm
+│   │   │   │   ├── libubox20210516.control
+│   │   │   │   ├── libubox20210516.list
+│   │   │   │   ├── libubox20210516.prerm
+│   │   │   │   ├── libubus-lua.control
+│   │   │   │   ├── libubus-lua.list
+│   │   │   │   ├── libubus-lua.prerm
+│   │   │   │   ├── libubus20210630.control
+│   │   │   │   ├── libubus20210630.list
+│   │   │   │   ├── libubus20210630.prerm
+│   │   │   │   ├── libuci20130104.control
+│   │   │   │   ├── libuci20130104.list
+│   │   │   │   ├── libuci20130104.prerm
+│   │   │   │   ├── libuclient20201210.control
+│   │   │   │   ├── libuclient20201210.list
+│   │   │   │   ├── libuclient20201210.prerm
+│   │   │   │   ├── libuuid1.control
+│   │   │   │   ├── libuuid1.list
+│   │   │   │   ├── libuuid1.prerm
+│   │   │   │   ├── libxtables12.control
+│   │   │   │   ├── libxtables12.list
+│   │   │   │   ├── libxtables12.prerm
+│   │   │   │   ├── logd.control
+│   │   │   │   ├── logd.list
+│   │   │   │   ├── logd.prerm
+│   │   │   │   ├── lua.control
+│   │   │   │   ├── lua.list
+│   │   │   │   ├── lua.prerm
+│   │   │   │   ├── luasocket.control
+│   │   │   │   ├── luasocket.list
+│   │   │   │   ├── luasocket.prerm
+│   │   │   │   ├── luci-app-mtk.control
+│   │   │   │   ├── luci-app-mtk.list
+│   │   │   │   ├── luci-app-mtk.prerm
+│   │   │   │   ├── luci-base.conffiles
+│   │   │   │   ├── luci-base.control
+│   │   │   │   ├── luci-base.list
+│   │   │   │   ├── luci-base.prerm
+│   │   │   │   ├── luci-compat.control
+│   │   │   │   ├── luci-compat.list
+│   │   │   │   ├── luci-compat.prerm
+│   │   │   │   ├── luci-lib-base.control
+│   │   │   │   ├── luci-lib-base.list
+│   │   │   │   ├── luci-lib-base.prerm
+│   │   │   │   ├── luci-lib-ip.control
+│   │   │   │   ├── luci-lib-ip.list
+│   │   │   │   ├── luci-lib-ip.prerm
+│   │   │   │   ├── luci-lib-jsonc.control
+│   │   │   │   ├── luci-lib-jsonc.list
+│   │   │   │   ├── luci-lib-jsonc.prerm
+│   │   │   │   ├── luci-lib-nixio.control
+│   │   │   │   ├── luci-lib-nixio.list
+│   │   │   │   ├── luci-lib-nixio.prerm
+│   │   │   │   ├── luci-theme-bootstrap.control
+│   │   │   │   ├── luci-theme-bootstrap.list
+│   │   │   │   ├── luci-theme-bootstrap.prerm
+│   │   │   │   ├── mapd.control
+│   │   │   │   ├── mapd.list
+│   │   │   │   ├── mapd.prerm
+│   │   │   │   ├── mii_mgr.control
+│   │   │   │   ├── mii_mgr.list
+│   │   │   │   ├── mii_mgr.prerm
+│   │   │   │   ├── mtd.control
+│   │   │   │   ├── mtd.list
+│   │   │   │   ├── mtd.prerm
+│   │   │   │   ├── mtk-base-files.control
+│   │   │   │   ├── mtk-base-files.list
+│   │   │   │   ├── mtk-base-files.prerm
+│   │   │   │   ├── mtk-efuse-nl-tool.control
+│   │   │   │   ├── mtk-efuse-nl-tool.list
+│   │   │   │   ├── mtk-efuse-nl-tool.prerm
+│   │   │   │   ├── mtk_factory_rw.control
+│   │   │   │   ├── mtk_factory_rw.list
+│   │   │   │   ├── mtk_factory_rw.prerm
+│   │   │   │   ├── mtkhnat_util.control
+│   │   │   │   ├── mtkhnat_util.list
+│   │   │   │   ├── mtkhnat_util.prerm
+│   │   │   │   ├── netifd.conffiles
+│   │   │   │   ├── netifd.control
+│   │   │   │   ├── netifd.list
+│   │   │   │   ├── netifd.prerm
+│   │   │   │   ├── odhcp6c.control
+│   │   │   │   ├── odhcp6c.list
+│   │   │   │   ├── odhcp6c.prerm
+│   │   │   │   ├── odhcpd-ipv6only.control
+│   │   │   │   ├── odhcpd-ipv6only.list
+│   │   │   │   ├── odhcpd-ipv6only.prerm
+│   │   │   │   ├── omcproxy.conffiles
+│   │   │   │   ├── omcproxy.control
+│   │   │   │   ├── omcproxy.list
+│   │   │   │   ├── omcproxy.prerm
+│   │   │   │   ├── openssh-client.conffiles
+│   │   │   │   ├── openssh-client.control
+│   │   │   │   ├── openssh-client.list
+│   │   │   │   ├── openssh-client.prerm
+│   │   │   │   ├── openssh-keygen.control
+│   │   │   │   ├── openssh-keygen.list
+│   │   │   │   ├── openssh-keygen.prerm
+│   │   │   │   ├── openssh-server.conffiles
+│   │   │   │   ├── openssh-server.control
+│   │   │   │   ├── openssh-server.list
+│   │   │   │   ├── openssh-server.prerm
+│   │   │   │   ├── openwrt-keyring.control
+│   │   │   │   ├── openwrt-keyring.list
+│   │   │   │   ├── openwrt-keyring.prerm
+│   │   │   │   ├── opkg.conffiles
+│   │   │   │   ├── opkg.control
+│   │   │   │   ├── opkg.list
+│   │   │   │   ├── opkg.prerm
+│   │   │   │   ├── ppp-mod-pppoe.control
+│   │   │   │   ├── ppp-mod-pppoe.list
+│   │   │   │   ├── ppp-mod-pppoe.prerm
+│   │   │   │   ├── ppp-mod-pppol2tp.control
+│   │   │   │   ├── ppp-mod-pppol2tp.list
+│   │   │   │   ├── ppp-mod-pppol2tp.prerm
+│   │   │   │   ├── ppp-mod-pptp.control
+│   │   │   │   ├── ppp-mod-pptp.list
+│   │   │   │   ├── ppp-mod-pptp.prerm
+│   │   │   │   ├── ppp.conffiles
+│   │   │   │   ├── ppp.control
+│   │   │   │   ├── ppp.list
+│   │   │   │   ├── ppp.prerm
+│   │   │   │   ├── procd.control
+│   │   │   │   ├── procd.list
+│   │   │   │   ├── procd.prerm
+│   │   │   │   ├── regs.control
+│   │   │   │   ├── regs.list
+│   │   │   │   ├── regs.prerm
+│   │   │   │   ├── resolveip.control
+│   │   │   │   ├── resolveip.list
+│   │   │   │   ├── resolveip.prerm
+│   │   │   │   ├── swconfig.control
+│   │   │   │   ├── swconfig.list
+│   │   │   │   ├── swconfig.prerm
+│   │   │   │   ├── switch.control
+│   │   │   │   ├── switch.list
+│   │   │   │   ├── switch.prerm
+│   │   │   │   ├── tc-full.control
+│   │   │   │   ├── tc-full.list
+│   │   │   │   ├── tc-full.prerm
+│   │   │   │   ├── tc-mod-iptables.control
+│   │   │   │   ├── tc-mod-iptables.list
+│   │   │   │   ├── tc-mod-iptables.prerm
+│   │   │   │   ├── tcpdump.control
+│   │   │   │   ├── tcpdump.list
+│   │   │   │   ├── tcpdump.prerm
+│   │   │   │   ├── ubi-utils.control
+│   │   │   │   ├── ubi-utils.list
+│   │   │   │   ├── ubi-utils.prerm
+│   │   │   │   ├── ubox.control
+│   │   │   │   ├── ubox.list
+│   │   │   │   ├── ubox.prerm
+│   │   │   │   ├── ubus.control
+│   │   │   │   ├── ubus.list
+│   │   │   │   ├── ubus.prerm
+│   │   │   │   ├── ubusd.control
+│   │   │   │   ├── ubusd.list
+│   │   │   │   ├── ubusd.prerm
+│   │   │   │   ├── uci.control
+│   │   │   │   ├── uci.list
+│   │   │   │   ├── uci.prerm
+│   │   │   │   ├── uclient-fetch.control
+│   │   │   │   ├── uclient-fetch.list
+│   │   │   │   ├── uclient-fetch.prerm
+│   │   │   │   ├── urandom-seed.control
+│   │   │   │   ├── urandom-seed.list
+│   │   │   │   ├── urandom-seed.prerm
+│   │   │   │   ├── urngd.control
+│   │   │   │   ├── urngd.list
+│   │   │   │   ├── urngd.prerm
+│   │   │   │   ├── usign.control
+│   │   │   │   ├── usign.list
+│   │   │   │   ├── usign.prerm
+│   │   │   │   ├── wapp.control
+│   │   │   │   ├── wapp.list
+│   │   │   │   ├── wapp.prerm
+│   │   │   │   ├── wifi-profile.control
+│   │   │   │   ├── wifi-profile.list
+│   │   │   │   ├── wifi-profile.prerm
+│   │   │   │   ├── wificonf.control
+│   │   │   │   ├── wificonf.list
+│   │   │   │   ├── wificonf.prerm
+│   │   │   │   ├── wireless-regdb.control
+│   │   │   │   ├── wireless-regdb.list
+│   │   │   │   ├── wireless-regdb.prerm
+│   │   │   │   ├── wireless-tools.control
+│   │   │   │   ├── wireless-tools.list
+│   │   │   │   ├── wireless-tools.prerm
+│   │   │   │   ├── wsdd2.control
+│   │   │   │   ├── wsdd2.list
+│   │   │   │   ├── wsdd2.prerm
+│   │   │   │   ├── zlib.control
+│   │   │   │   ├── zlib.list
+│   │   │   │   └── zlib.prerm
+│   │   │   ├── lists
+│   │   │   └── status
+│   │   ├── os-release
+│   │   ├── pppd
+│   │   │   └── 2.4.8
+│   │   │       ├── pppol2tp.so
+│   │   │       ├── pptp.so
+│   │   │       └── rp-pppoe.so
+│   │   └── tc
+│   │       └── m_xt.so
+│   ├── lib64
+│   │   ├── dnsmasq
+│   │   │   └── dhcp-script.sh
+│   │   ├── ebtables
+│   │   │   ├── libebt_802_3.so
+│   │   │   ├── libebt_among.so
+│   │   │   ├── libebt_arp.so
+│   │   │   ├── libebt_arpreply.so
+│   │   │   ├── libebt_ip.so
+│   │   │   ├── libebt_ip6.so
+│   │   │   ├── libebt_limit.so
+│   │   │   ├── libebt_log.so
+│   │   │   ├── libebt_mark.so
+│   │   │   ├── libebt_mark_m.so
+│   │   │   ├── libebt_nat.so
+│   │   │   ├── libebt_nflog.so
+│   │   │   ├── libebt_pkttype.so
+│   │   │   ├── libebt_redirect.so
+│   │   │   ├── libebt_standard.so
+│   │   │   ├── libebt_stp.so
+│   │   │   ├── libebt_string.so
+│   │   │   ├── libebt_ulog.so
+│   │   │   ├── libebt_vlan.so
+│   │   │   ├── libebtable_broute.so
+│   │   │   ├── libebtable_filter.so
+│   │   │   └── libebtable_nat.so
+│   │   ├── engines-1.1
+│   │   ├── iptables
+│   │   │   ├── libip6t_HL.so
+│   │   │   ├── libip6t_hl.so
+│   │   │   ├── libipt_ECN.so
+│   │   │   ├── libipt_TTL.so
+│   │   │   ├── libipt_ah.so
+│   │   │   ├── libipt_ttl.so
+│   │   │   ├── libxt_CLASSIFY.so
+│   │   │   ├── libxt_DSCP.so
+│   │   │   ├── libxt_TOS.so
+│   │   │   ├── libxt_dscp.so
+│   │   │   ├── libxt_ecn.so
+│   │   │   ├── libxt_esp.so
+│   │   │   ├── libxt_length.so
+│   │   │   ├── libxt_policy.so
+│   │   │   ├── libxt_statistic.so
+│   │   │   ├── libxt_tcpmss.so
+│   │   │   └── libxt_tos.so
+│   │   ├── libblkid.so.1 -> libblkid.so.1.1.0
+│   │   ├── libblkid.so.1.1.0
+│   │   ├── libbpf.so.0 -> libbpf.so.0.2.0
+│   │   ├── libbpf.so.0.2.0
+│   │   ├── libcap-ng.so -> libcap-ng.so.0.0.0
+│   │   ├── libcap-ng.so.0 -> libcap-ng.so.0.0.0
+│   │   ├── libcap-ng.so.0.0.0
+│   │   ├── libcrypto.so.1.1
+│   │   ├── libebtc.so
+│   │   ├── libelf-0.180.so
+│   │   ├── libelf.so.1 -> libelf-0.180.so
+│   │   ├── libeth_1905ops.so
+│   │   ├── libgmp.so.10 -> libgmp.so.10.4.1
+│   │   ├── libgmp.so.10.4.1
+│   │   ├── libgpiod.so.2 -> libgpiod.so.2.1.4
+│   │   ├── libgpiod.so.2.1.4
+│   │   ├── libi2c.so -> libi2c.so.0.1.1
+│   │   ├── libi2c.so.0 -> libi2c.so.0.1.1
+│   │   ├── libi2c.so.0.1.1
+│   │   ├── libip4tc.so.2 -> libip4tc.so.2.0.0
+│   │   ├── libip4tc.so.2.0.0
+│   │   ├── libip6tc.so.2 -> libip6tc.so.2.0.0
+│   │   ├── libip6tc.so.2.0.0
+│   │   ├── libipset.so.13 -> libipset.so.13.1.0
+│   │   ├── libipset.so.13.1.0
+│   │   ├── libiptext.so
+│   │   ├── libiptext4.so
+│   │   ├── libiptext6.so
+│   │   ├── libiwinfo.so.20210430
+│   │   ├── libjson-c.so.5 -> libjson-c.so.5.1.0
+│   │   ├── libjson-c.so.5.1.0
+│   │   ├── liblua.so.5.1.5
+│   │   ├── liblucihttp.so.0 -> liblucihttp.so.0.1
+│   │   ├── liblucihttp.so.0.1
+│   │   ├── libmapd_interface_client.so
+│   │   ├── libmnl.so.0 -> libmnl.so.0.2.0
+│   │   ├── libmnl.so.0.2.0
+│   │   ├── libnl-3.so.200 -> libnl-3.so.200.26.0
+│   │   ├── libnl-3.so.200.26.0
+│   │   ├── libnl-genl-3.so.200 -> libnl-genl-3.so.200.26.0
+│   │   ├── libnl-genl-3.so.200.26.0
+│   │   ├── libnl-tiny.so
+│   │   ├── libpcap.so.1 -> libpcap.so.1.9.1
+│   │   ├── libpcap.so.1.9.1
+│   │   ├── libssl.so.1.1
+│   │   ├── libuclient.so
+│   │   ├── libuuid.so.1 -> libuuid.so.1.3.0
+│   │   ├── libuuid.so.1.3.0
+│   │   ├── libxtables.so.12 -> libxtables.so.12.4.0
+│   │   ├── libxtables.so.12.4.0
+│   │   ├── libz.so -> libz.so.1
+│   │   ├── libz.so.1 -> libz.so.1.2.11
+│   │   ├── libz.so.1.2.11
+│   │   ├── lua
+│   │   │   ├── datconf.so
+│   │   │   ├── ioctl_helper.so
+│   │   │   ├── iwinfo.so
+│   │   │   ├── l1dat_parser.lua
+│   │   │   ├── ltn12.lua
+│   │   │   ├── luci
+│   │   │   │   ├── cacheloader.lua
+│   │   │   │   ├── cbi
+│   │   │   │   │   └── datatypes.lua
+│   │   │   │   ├── cbi.lua
+│   │   │   │   ├── ccache.lua
+│   │   │   │   ├── config.lua
+│   │   │   │   ├── controller
+│   │   │   │   │   ├── admin
+│   │   │   │   │   │   ├── index.lua
+│   │   │   │   │   │   └── uci.lua
+│   │   │   │   │   ├── hwnat.lua
+│   │   │   │   │   ├── ipsec.lua
+│   │   │   │   │   └── mtkwifi.lua
+│   │   │   │   ├── debug.lua
+│   │   │   │   ├── dispatcher.lua
+│   │   │   │   ├── http.lua
+│   │   │   │   ├── i18n.lua
+│   │   │   │   ├── ip.so
+│   │   │   │   ├── jsonc.so
+│   │   │   │   ├── ltn12.lua
+│   │   │   │   ├── model
+│   │   │   │   │   ├── cbi
+│   │   │   │   │   │   ├── hwnat.lua
+│   │   │   │   │   │   └── ipsec.lua
+│   │   │   │   │   ├── firewall.lua
+│   │   │   │   │   ├── network
+│   │   │   │   │   │   ├── proto_3g.lua
+│   │   │   │   │   │   ├── proto_4x6.lua
+│   │   │   │   │   │   ├── proto_6x4.lua
+│   │   │   │   │   │   ├── proto_dhcpv6.lua
+│   │   │   │   │   │   ├── proto_hnet.lua
+│   │   │   │   │   │   ├── proto_ipip.lua
+│   │   │   │   │   │   ├── proto_modemmanager.lua
+│   │   │   │   │   │   ├── proto_ncm.lua
+│   │   │   │   │   │   ├── proto_openconnect.lua
+│   │   │   │   │   │   ├── proto_ppp.lua
+│   │   │   │   │   │   ├── proto_pppossh.lua
+│   │   │   │   │   │   ├── proto_qmi.lua
+│   │   │   │   │   │   ├── proto_relay.lua
+│   │   │   │   │   │   ├── proto_vpnc.lua
+│   │   │   │   │   │   └── proto_wireguard.lua
+│   │   │   │   │   ├── network.lua
+│   │   │   │   │   └── uci.lua
+│   │   │   │   ├── sgi
+│   │   │   │   │   ├── cgi.lua
+│   │   │   │   │   └── uhttpd.lua
+│   │   │   │   ├── store.lua
+│   │   │   │   ├── sys
+│   │   │   │   │   ├── zoneinfo
+│   │   │   │   │   │   ├── tzdata.lua
+│   │   │   │   │   │   └── tzoffset.lua
+│   │   │   │   │   └── zoneinfo.lua
+│   │   │   │   ├── sys.lua
+│   │   │   │   ├── template
+│   │   │   │   │   └── parser.so
+│   │   │   │   ├── template.lua
+│   │   │   │   ├── tools
+│   │   │   │   │   └── webadmin.lua
+│   │   │   │   ├── util.lua
+│   │   │   │   ├── version.lua
+│   │   │   │   ├── view
+│   │   │   │   │   ├── admin_mtk
+│   │   │   │   │   │   ├── hwnat_status.htm
+│   │   │   │   │   │   ├── mtk_hwnat.htm
+│   │   │   │   │   │   ├── mtk_ipsec_view.htm
+│   │   │   │   │   │   ├── mtk_web_console.htm
+│   │   │   │   │   │   ├── mtk_wifi_apcli.htm
+│   │   │   │   │   │   ├── mtk_wifi_apply_reboot.htm
+│   │   │   │   │   │   ├── mtk_wifi_chip_cfg.htm
+│   │   │   │   │   │   ├── mtk_wifi_dev_cfg.htm
+│   │   │   │   │   │   ├── mtk_wifi_loading.htm
+│   │   │   │   │   │   ├── mtk_wifi_man.htm
+│   │   │   │   │   │   ├── mtk_wifi_map_ap_capabilities.htm
+│   │   │   │   │   │   ├── mtk_wifi_map_bh_link_metrics.htm
+│   │   │   │   │   │   ├── mtk_wifi_map_bss_cfg_renew.htm
+│   │   │   │   │   │   ├── mtk_wifi_map_bssinfo.htm
+│   │   │   │   │   │   ├── mtk_wifi_map_channel_planning_score.htm
+│   │   │   │   │   │   ├── mtk_wifi_map_channel_scan_result.htm
+│   │   │   │   │   │   ├── mtk_wifi_map_client_capabilities.htm
+│   │   │   │   │   │   ├── mtk_wifi_map_data_element.htm
+│   │   │   │   │   │   ├── mtk_wifi_map_display_bootstrapping_uri.htm
+│   │   │   │   │   │   ├── mtk_wifi_map_runtime_topology.htm
+│   │   │   │   │   │   ├── mtk_wifi_multi_ap.htm
+│   │   │   │   │   │   ├── mtk_wifi_overview.htm
+│   │   │   │   │   │   └── mtk_wifi_vif_cfg.htm
+│   │   │   │   │   ├── cbi
+│   │   │   │   │   │   ├── browser.htm
+│   │   │   │   │   │   ├── button.htm
+│   │   │   │   │   │   ├── cell_valuefooter.htm
+│   │   │   │   │   │   ├── cell_valueheader.htm
+│   │   │   │   │   │   ├── compound.htm
+│   │   │   │   │   │   ├── delegator.htm
+│   │   │   │   │   │   ├── dropdown.htm
+│   │   │   │   │   │   ├── dvalue.htm
+│   │   │   │   │   │   ├── dynlist.htm
+│   │   │   │   │   │   ├── error.htm
+│   │   │   │   │   │   ├── firewall_zonelist.htm
+│   │   │   │   │   │   ├── footer.htm
+│   │   │   │   │   │   ├── full_valuefooter.htm
+│   │   │   │   │   │   ├── full_valueheader.htm
+│   │   │   │   │   │   ├── fvalue.htm
+│   │   │   │   │   │   ├── header.htm
+│   │   │   │   │   │   ├── ipaddr.htm
+│   │   │   │   │   │   ├── lvalue.htm
+│   │   │   │   │   │   ├── map.htm
+│   │   │   │   │   │   ├── mvalue.htm
+│   │   │   │   │   │   ├── network_ifacelist.htm
+│   │   │   │   │   │   ├── network_netinfo.htm
+│   │   │   │   │   │   ├── network_netlist.htm
+│   │   │   │   │   │   ├── nsection.htm
+│   │   │   │   │   │   ├── nullsection.htm
+│   │   │   │   │   │   ├── simpleform.htm
+│   │   │   │   │   │   ├── tabcontainer.htm
+│   │   │   │   │   │   ├── tblsection.htm
+│   │   │   │   │   │   ├── tsection.htm
+│   │   │   │   │   │   ├── tvalue.htm
+│   │   │   │   │   │   ├── ucisection.htm
+│   │   │   │   │   │   ├── upload.htm
+│   │   │   │   │   │   ├── value.htm
+│   │   │   │   │   │   ├── valuefooter.htm
+│   │   │   │   │   │   ├── valueheader.htm
+│   │   │   │   │   │   └── wireless_modefreq.htm
+│   │   │   │   │   ├── csrftoken.htm
+│   │   │   │   │   ├── empty_node_placeholder.htm
+│   │   │   │   │   ├── error404.htm
+│   │   │   │   │   ├── error500.htm
+│   │   │   │   │   ├── footer.htm
+│   │   │   │   │   ├── header.htm
+│   │   │   │   │   ├── indexer.htm
+│   │   │   │   │   ├── sysauth.htm
+│   │   │   │   │   ├── themes
+│   │   │   │   │   │   ├── bootstrap
+│   │   │   │   │   │   │   ├── footer.htm
+│   │   │   │   │   │   │   ├── header.htm
+│   │   │   │   │   │   │   └── sysauth.htm
+│   │   │   │   │   │   ├── bootstrap-dark
+│   │   │   │   │   │   │   ├── footer.htm
+│   │   │   │   │   │   │   ├── header.htm
+│   │   │   │   │   │   │   └── sysauth.htm
+│   │   │   │   │   │   └── bootstrap-light
+│   │   │   │   │   │       ├── footer.htm
+│   │   │   │   │   │       ├── header.htm
+│   │   │   │   │   │       └── sysauth.htm
+│   │   │   │   │   └── view.htm
+│   │   │   │   └── xml.lua
+│   │   │   ├── lucihttp.so
+│   │   │   ├── map_helper.so
+│   │   │   ├── mime
+│   │   │   │   └── core.so -> ../mime-1.0.3.so
+│   │   │   ├── mime-1.0.3.so
+│   │   │   ├── mime.lua
+│   │   │   ├── mtkwifi.lua
+│   │   │   ├── nixio
+│   │   │   │   ├── fs.lua
+│   │   │   │   └── util.lua
+│   │   │   ├── nixio.so
+│   │   │   ├── shuci.lua
+│   │   │   ├── socket
+│   │   │   │   ├── core.so -> ../socket-3.0-rc1.so
+│   │   │   │   ├── ftp.lua
+│   │   │   │   ├── headers.lua
+│   │   │   │   ├── http.lua
+│   │   │   │   ├── smtp.lua
+│   │   │   │   ├── tp.lua
+│   │   │   │   ├── unix.so
+│   │   │   │   └── url.lua
+│   │   │   ├── socket-3.0-rc1.so
+│   │   │   ├── socket.lua
+│   │   │   ├── ubus.so
+│   │   │   └── wps_action.lua
+│   │   ├── opkg
+│   │   │   ├── info
+│   │   │   │   ├── 1905daemon.control
+│   │   │   │   ├── 1905daemon.list
+│   │   │   │   ├── 1905daemon.prerm
+│   │   │   │   ├── 8021xd.control
+│   │   │   │   ├── 8021xd.list
+│   │   │   │   ├── 8021xd.prerm
+│   │   │   │   ├── ated_ext.control
+│   │   │   │   ├── ated_ext.list
+│   │   │   │   ├── ated_ext.prerm
+│   │   │   │   ├── base-files.conffiles
+│   │   │   │   ├── base-files.control
+│   │   │   │   ├── base-files.list
+│   │   │   │   ├── base-files.prerm
+│   │   │   │   ├── block-mount.control
+│   │   │   │   ├── block-mount.list
+│   │   │   │   ├── block-mount.prerm
+│   │   │   │   ├── blockd.control
+│   │   │   │   ├── blockd.list
+│   │   │   │   ├── blockd.prerm
+│   │   │   │   ├── busybox.control
+│   │   │   │   ├── busybox.list
+│   │   │   │   ├── busybox.prerm
+│   │   │   │   ├── ca-certificates.control
+│   │   │   │   ├── ca-certificates.list
+│   │   │   │   ├── ca-certificates.prerm
+│   │   │   │   ├── cgi-io.control
+│   │   │   │   ├── cgi-io.list
+│   │   │   │   ├── cgi-io.prerm
+│   │   │   │   ├── datconf-lua.control
+│   │   │   │   ├── datconf-lua.list
+│   │   │   │   ├── datconf-lua.prerm
+│   │   │   │   ├── datconf.control
+│   │   │   │   ├── datconf.list
+│   │   │   │   ├── datconf.prerm
+│   │   │   │   ├── dnsmasq.conffiles
+│   │   │   │   ├── dnsmasq.control
+│   │   │   │   ├── dnsmasq.list
+│   │   │   │   ├── dnsmasq.prerm
+│   │   │   │   ├── ebtables.control
+│   │   │   │   ├── ebtables.list
+│   │   │   │   ├── ebtables.prerm
+│   │   │   │   ├── ethtool.control
+│   │   │   │   ├── ethtool.list
+│   │   │   │   ├── ethtool.prerm
+│   │   │   │   ├── fstools.control
+│   │   │   │   ├── fstools.list
+│   │   │   │   ├── fstools.prerm
+│   │   │   │   ├── fwtool.control
+│   │   │   │   ├── fwtool.list
+│   │   │   │   ├── fwtool.prerm
+│   │   │   │   ├── getrandom.control
+│   │   │   │   ├── getrandom.list
+│   │   │   │   ├── getrandom.prerm
+│   │   │   │   ├── gpiod-tools.control
+│   │   │   │   ├── gpiod-tools.list
+│   │   │   │   ├── gpiod-tools.prerm
+│   │   │   │   ├── gre.control
+│   │   │   │   ├── gre.list
+│   │   │   │   ├── gre.prerm
+│   │   │   │   ├── i2c-tools.control
+│   │   │   │   ├── i2c-tools.list
+│   │   │   │   ├── i2c-tools.prerm
+│   │   │   │   ├── ip-bridge.control
+│   │   │   │   ├── ip-bridge.list
+│   │   │   │   ├── ip-bridge.prerm
+│   │   │   │   ├── ip-full.control
+│   │   │   │   ├── ip-full.list
+│   │   │   │   ├── ip-full.prerm
+│   │   │   │   ├── ip6tables.control
+│   │   │   │   ├── ip6tables.list
+│   │   │   │   ├── ip6tables.prerm
+│   │   │   │   ├── iperf3.control
+│   │   │   │   ├── iperf3.list
+│   │   │   │   ├── iperf3.prerm
+│   │   │   │   ├── ipset.control
+│   │   │   │   ├── ipset.list
+│   │   │   │   ├── ipset.prerm
+│   │   │   │   ├── iptables-mod-ipopt.control
+│   │   │   │   ├── iptables-mod-ipopt.list
+│   │   │   │   ├── iptables-mod-ipopt.prerm
+│   │   │   │   ├── iptables-mod-ipsec.control
+│   │   │   │   ├── iptables-mod-ipsec.list
+│   │   │   │   ├── iptables-mod-ipsec.prerm
+│   │   │   │   ├── iptables.control
+│   │   │   │   ├── iptables.list
+│   │   │   │   ├── iptables.prerm
+│   │   │   │   ├── iw.control
+│   │   │   │   ├── iw.list
+│   │   │   │   ├── iw.prerm
+│   │   │   │   ├── iwinfo.control
+│   │   │   │   ├── iwinfo.list
+│   │   │   │   ├── iwinfo.prerm
+│   │   │   │   ├── jshn.control
+│   │   │   │   ├── jshn.list
+│   │   │   │   ├── jshn.prerm
+│   │   │   │   ├── jsonfilter.control
+│   │   │   │   ├── jsonfilter.list
+│   │   │   │   ├── jsonfilter.prerm
+│   │   │   │   ├── kernel.control
+│   │   │   │   ├── kernel.list
+│   │   │   │   ├── kernel.prerm
+│   │   │   │   ├── kmod-ata-core.control
+│   │   │   │   ├── kmod-ata-core.list
+│   │   │   │   ├── kmod-ata-core.prerm
+│   │   │   │   ├── kmod-conninfra.control
+│   │   │   │   ├── kmod-conninfra.list
+│   │   │   │   ├── kmod-conninfra.prerm
+│   │   │   │   ├── kmod-crypto-acompress.control
+│   │   │   │   ├── kmod-crypto-acompress.list
+│   │   │   │   ├── kmod-crypto-acompress.prerm
+│   │   │   │   ├── kmod-crypto-aead.control
+│   │   │   │   ├── kmod-crypto-aead.list
+│   │   │   │   ├── kmod-crypto-aead.prerm
+│   │   │   │   ├── kmod-crypto-arc4.control
+│   │   │   │   ├── kmod-crypto-arc4.list
+│   │   │   │   ├── kmod-crypto-arc4.prerm
+│   │   │   │   ├── kmod-crypto-authenc.control
+│   │   │   │   ├── kmod-crypto-authenc.list
+│   │   │   │   ├── kmod-crypto-authenc.prerm
+│   │   │   │   ├── kmod-crypto-cbc.control
+│   │   │   │   ├── kmod-crypto-cbc.list
+│   │   │   │   ├── kmod-crypto-cbc.prerm
+│   │   │   │   ├── kmod-crypto-ccm.control
+│   │   │   │   ├── kmod-crypto-ccm.list
+│   │   │   │   ├── kmod-crypto-ccm.prerm
+│   │   │   │   ├── kmod-crypto-cmac.control
+│   │   │   │   ├── kmod-crypto-cmac.list
+│   │   │   │   ├── kmod-crypto-cmac.prerm
+│   │   │   │   ├── kmod-crypto-crc32c.control
+│   │   │   │   ├── kmod-crypto-crc32c.list
+│   │   │   │   ├── kmod-crypto-crc32c.prerm
+│   │   │   │   ├── kmod-crypto-ctr.control
+│   │   │   │   ├── kmod-crypto-ctr.list
+│   │   │   │   ├── kmod-crypto-ctr.prerm
+│   │   │   │   ├── kmod-crypto-deflate.control
+│   │   │   │   ├── kmod-crypto-deflate.list
+│   │   │   │   ├── kmod-crypto-deflate.prerm
+│   │   │   │   ├── kmod-crypto-des.control
+│   │   │   │   ├── kmod-crypto-des.list
+│   │   │   │   ├── kmod-crypto-des.prerm
+│   │   │   │   ├── kmod-crypto-ecb.control
+│   │   │   │   ├── kmod-crypto-ecb.list
+│   │   │   │   ├── kmod-crypto-ecb.prerm
+│   │   │   │   ├── kmod-crypto-echainiv.control
+│   │   │   │   ├── kmod-crypto-echainiv.list
+│   │   │   │   ├── kmod-crypto-echainiv.prerm
+│   │   │   │   ├── kmod-crypto-gcm.control
+│   │   │   │   ├── kmod-crypto-gcm.list
+│   │   │   │   ├── kmod-crypto-gcm.prerm
+│   │   │   │   ├── kmod-crypto-gf128.control
+│   │   │   │   ├── kmod-crypto-gf128.list
+│   │   │   │   ├── kmod-crypto-gf128.prerm
+│   │   │   │   ├── kmod-crypto-ghash.control
+│   │   │   │   ├── kmod-crypto-ghash.list
+│   │   │   │   ├── kmod-crypto-ghash.prerm
+│   │   │   │   ├── kmod-crypto-hash.control
+│   │   │   │   ├── kmod-crypto-hash.list
+│   │   │   │   ├── kmod-crypto-hash.prerm
+│   │   │   │   ├── kmod-crypto-hmac.control
+│   │   │   │   ├── kmod-crypto-hmac.list
+│   │   │   │   ├── kmod-crypto-hmac.prerm
+│   │   │   │   ├── kmod-crypto-manager.control
+│   │   │   │   ├── kmod-crypto-manager.list
+│   │   │   │   ├── kmod-crypto-manager.prerm
+│   │   │   │   ├── kmod-crypto-md4.control
+│   │   │   │   ├── kmod-crypto-md4.list
+│   │   │   │   ├── kmod-crypto-md4.prerm
+│   │   │   │   ├── kmod-crypto-md5.control
+│   │   │   │   ├── kmod-crypto-md5.list
+│   │   │   │   ├── kmod-crypto-md5.prerm
+│   │   │   │   ├── kmod-crypto-null.control
+│   │   │   │   ├── kmod-crypto-null.list
+│   │   │   │   ├── kmod-crypto-null.prerm
+│   │   │   │   ├── kmod-crypto-pcompress.control
+│   │   │   │   ├── kmod-crypto-pcompress.list
+│   │   │   │   ├── kmod-crypto-pcompress.prerm
+│   │   │   │   ├── kmod-crypto-rng.control
+│   │   │   │   ├── kmod-crypto-rng.list
+│   │   │   │   ├── kmod-crypto-rng.prerm
+│   │   │   │   ├── kmod-crypto-seqiv.control
+│   │   │   │   ├── kmod-crypto-seqiv.list
+│   │   │   │   ├── kmod-crypto-seqiv.prerm
+│   │   │   │   ├── kmod-crypto-sha1.control
+│   │   │   │   ├── kmod-crypto-sha1.list
+│   │   │   │   ├── kmod-crypto-sha1.prerm
+│   │   │   │   ├── kmod-crypto-sha256.control
+│   │   │   │   ├── kmod-crypto-sha256.list
+│   │   │   │   ├── kmod-crypto-sha256.prerm
+│   │   │   │   ├── kmod-crypto-sha512.control
+│   │   │   │   ├── kmod-crypto-sha512.list
+│   │   │   │   ├── kmod-crypto-sha512.prerm
+│   │   │   │   ├── kmod-ebtables-ipv4.control
+│   │   │   │   ├── kmod-ebtables-ipv4.list
+│   │   │   │   ├── kmod-ebtables-ipv4.prerm
+│   │   │   │   ├── kmod-ebtables.control
+│   │   │   │   ├── kmod-ebtables.list
+│   │   │   │   ├── kmod-ebtables.prerm
+│   │   │   │   ├── kmod-fs-autofs4.control
+│   │   │   │   ├── kmod-fs-autofs4.list
+│   │   │   │   ├── kmod-fs-autofs4.prerm
+│   │   │   │   ├── kmod-fs-vfat.control
+│   │   │   │   ├── kmod-fs-vfat.list
+│   │   │   │   ├── kmod-fs-vfat.prerm
+│   │   │   │   ├── kmod-gpio-button-hotplug.control
+│   │   │   │   ├── kmod-gpio-button-hotplug.list
+│   │   │   │   ├── kmod-gpio-button-hotplug.prerm
+│   │   │   │   ├── kmod-gre.control
+│   │   │   │   ├── kmod-gre.list
+│   │   │   │   ├── kmod-gre.prerm
+│   │   │   │   ├── kmod-gre6.control
+│   │   │   │   ├── kmod-gre6.list
+│   │   │   │   ├── kmod-gre6.prerm
+│   │   │   │   ├── kmod-ip6-tunnel.control
+│   │   │   │   ├── kmod-ip6-tunnel.list
+│   │   │   │   ├── kmod-ip6-tunnel.prerm
+│   │   │   │   ├── kmod-ip6tables.control
+│   │   │   │   ├── kmod-ip6tables.list
+│   │   │   │   ├── kmod-ip6tables.prerm
+│   │   │   │   ├── kmod-ipsec.control
+│   │   │   │   ├── kmod-ipsec.list
+│   │   │   │   ├── kmod-ipsec.prerm
+│   │   │   │   ├── kmod-ipsec4.control
+│   │   │   │   ├── kmod-ipsec4.list
+│   │   │   │   ├── kmod-ipsec4.prerm
+│   │   │   │   ├── kmod-ipsec6.control
+│   │   │   │   ├── kmod-ipsec6.list
+│   │   │   │   ├── kmod-ipsec6.prerm
+│   │   │   │   ├── kmod-ipt-conntrack.control
+│   │   │   │   ├── kmod-ipt-conntrack.list
+│   │   │   │   ├── kmod-ipt-conntrack.prerm
+│   │   │   │   ├── kmod-ipt-core.control
+│   │   │   │   ├── kmod-ipt-core.list
+│   │   │   │   ├── kmod-ipt-core.prerm
+│   │   │   │   ├── kmod-ipt-extra.control
+│   │   │   │   ├── kmod-ipt-extra.list
+│   │   │   │   ├── kmod-ipt-extra.prerm
+│   │   │   │   ├── kmod-ipt-ipopt.control
+│   │   │   │   ├── kmod-ipt-ipopt.list
+│   │   │   │   ├── kmod-ipt-ipopt.prerm
+│   │   │   │   ├── kmod-ipt-ipsec.control
+│   │   │   │   ├── kmod-ipt-ipsec.list
+│   │   │   │   ├── kmod-ipt-ipsec.prerm
+│   │   │   │   ├── kmod-ipt-ipset.control
+│   │   │   │   ├── kmod-ipt-ipset.list
+│   │   │   │   ├── kmod-ipt-ipset.prerm
+│   │   │   │   ├── kmod-ipt-nat.control
+│   │   │   │   ├── kmod-ipt-nat.list
+│   │   │   │   ├── kmod-ipt-nat.prerm
+│   │   │   │   ├── kmod-ipt-offload.control
+│   │   │   │   ├── kmod-ipt-offload.list
+│   │   │   │   ├── kmod-ipt-offload.prerm
+│   │   │   │   ├── kmod-iptunnel.control
+│   │   │   │   ├── kmod-iptunnel.list
+│   │   │   │   ├── kmod-iptunnel.prerm
+│   │   │   │   ├── kmod-iptunnel4.control
+│   │   │   │   ├── kmod-iptunnel4.list
+│   │   │   │   ├── kmod-iptunnel4.prerm
+│   │   │   │   ├── kmod-iptunnel6.control
+│   │   │   │   ├── kmod-iptunnel6.list
+│   │   │   │   ├── kmod-iptunnel6.prerm
+│   │   │   │   ├── kmod-l2tp.control
+│   │   │   │   ├── kmod-l2tp.list
+│   │   │   │   ├── kmod-l2tp.prerm
+│   │   │   │   ├── kmod-leds-gpio.control
+│   │   │   │   ├── kmod-leds-gpio.list
+│   │   │   │   ├── kmod-leds-gpio.prerm
+│   │   │   │   ├── kmod-lib-crc-ccitt.control
+│   │   │   │   ├── kmod-lib-crc-ccitt.list
+│   │   │   │   ├── kmod-lib-crc-ccitt.prerm
+│   │   │   │   ├── kmod-lib-crc32c.control
+│   │   │   │   ├── kmod-lib-crc32c.list
+│   │   │   │   ├── kmod-lib-crc32c.prerm
+│   │   │   │   ├── kmod-lib-zlib-deflate.control
+│   │   │   │   ├── kmod-lib-zlib-deflate.list
+│   │   │   │   ├── kmod-lib-zlib-deflate.prerm
+│   │   │   │   ├── kmod-lib-zlib-inflate.control
+│   │   │   │   ├── kmod-lib-zlib-inflate.list
+│   │   │   │   ├── kmod-lib-zlib-inflate.prerm
+│   │   │   │   ├── kmod-macsec.control
+│   │   │   │   ├── kmod-macsec.list
+│   │   │   │   ├── kmod-macsec.prerm
+│   │   │   │   ├── kmod-mapfilter.control
+│   │   │   │   ├── kmod-mapfilter.list
+│   │   │   │   ├── kmod-mapfilter.prerm
+│   │   │   │   ├── kmod-mediatek_hnat.control
+│   │   │   │   ├── kmod-mediatek_hnat.list
+│   │   │   │   ├── kmod-mediatek_hnat.prerm
+│   │   │   │   ├── kmod-mppe.control
+│   │   │   │   ├── kmod-mppe.list
+│   │   │   │   ├── kmod-mppe.prerm
+│   │   │   │   ├── kmod-mt7915.control
+│   │   │   │   ├── kmod-mt7915.list
+│   │   │   │   ├── kmod-mt7915.prerm
+│   │   │   │   ├── kmod-mt_wifi.control
+│   │   │   │   ├── kmod-mt_wifi.list
+│   │   │   │   ├── kmod-mt_wifi.prerm
+│   │   │   │   ├── kmod-mtdtests.control
+│   │   │   │   ├── kmod-mtdtests.list
+│   │   │   │   ├── kmod-mtdtests.prerm
+│   │   │   │   ├── kmod-mtfwd.control
+│   │   │   │   ├── kmod-mtfwd.list
+│   │   │   │   ├── kmod-mtfwd.prerm
+│   │   │   │   ├── kmod-mtk-efuse-nl-drv.control
+│   │   │   │   ├── kmod-mtk-efuse-nl-drv.list
+│   │   │   │   ├── kmod-mtk-efuse-nl-drv.prerm
+│   │   │   │   ├── kmod-nf-conntrack.control
+│   │   │   │   ├── kmod-nf-conntrack.list
+│   │   │   │   ├── kmod-nf-conntrack.prerm
+│   │   │   │   ├── kmod-nf-conntrack6.control
+│   │   │   │   ├── kmod-nf-conntrack6.list
+│   │   │   │   ├── kmod-nf-conntrack6.prerm
+│   │   │   │   ├── kmod-nf-flow.control
+│   │   │   │   ├── kmod-nf-flow.list
+│   │   │   │   ├── kmod-nf-flow.prerm
+│   │   │   │   ├── kmod-nf-ipt.control
+│   │   │   │   ├── kmod-nf-ipt.list
+│   │   │   │   ├── kmod-nf-ipt.prerm
+│   │   │   │   ├── kmod-nf-ipt6.control
+│   │   │   │   ├── kmod-nf-ipt6.list
+│   │   │   │   ├── kmod-nf-ipt6.prerm
+│   │   │   │   ├── kmod-nf-nat.control
+│   │   │   │   ├── kmod-nf-nat.list
+│   │   │   │   ├── kmod-nf-nat.prerm
+│   │   │   │   ├── kmod-nf-reject.control
+│   │   │   │   ├── kmod-nf-reject.list
+│   │   │   │   ├── kmod-nf-reject.prerm
+│   │   │   │   ├── kmod-nf-reject6.control
+│   │   │   │   ├── kmod-nf-reject6.list
+│   │   │   │   ├── kmod-nf-reject6.prerm
+│   │   │   │   ├── kmod-nfnetlink.control
+│   │   │   │   ├── kmod-nfnetlink.list
+│   │   │   │   ├── kmod-nfnetlink.prerm
+│   │   │   │   ├── kmod-nls-base.control
+│   │   │   │   ├── kmod-nls-base.list
+│   │   │   │   ├── kmod-nls-base.prerm
+│   │   │   │   ├── kmod-nls-cp437.control
+│   │   │   │   ├── kmod-nls-cp437.list
+│   │   │   │   ├── kmod-nls-cp437.prerm
+│   │   │   │   ├── kmod-nls-iso8859-1.control
+│   │   │   │   ├── kmod-nls-iso8859-1.list
+│   │   │   │   ├── kmod-nls-iso8859-1.prerm
+│   │   │   │   ├── kmod-nls-utf8.control
+│   │   │   │   ├── kmod-nls-utf8.list
+│   │   │   │   ├── kmod-nls-utf8.prerm
+│   │   │   │   ├── kmod-phy-air_en8811h.control
+│   │   │   │   ├── kmod-phy-air_en8811h.list
+│   │   │   │   ├── kmod-phy-air_en8811h.prerm
+│   │   │   │   ├── kmod-ppp.control
+│   │   │   │   ├── kmod-ppp.list
+│   │   │   │   ├── kmod-ppp.prerm
+│   │   │   │   ├── kmod-pppoe.control
+│   │   │   │   ├── kmod-pppoe.list
+│   │   │   │   ├── kmod-pppoe.prerm
+│   │   │   │   ├── kmod-pppol2tp.control
+│   │   │   │   ├── kmod-pppol2tp.list
+│   │   │   │   ├── kmod-pppol2tp.prerm
+│   │   │   │   ├── kmod-pppox.control
+│   │   │   │   ├── kmod-pppox.list
+│   │   │   │   ├── kmod-pppox.prerm
+│   │   │   │   ├── kmod-pptp.control
+│   │   │   │   ├── kmod-pptp.list
+│   │   │   │   ├── kmod-pptp.prerm
+│   │   │   │   ├── kmod-sched-cake.control
+│   │   │   │   ├── kmod-sched-cake.list
+│   │   │   │   ├── kmod-sched-cake.prerm
+│   │   │   │   ├── kmod-sched-core.control
+│   │   │   │   ├── kmod-sched-core.list
+│   │   │   │   ├── kmod-sched-core.prerm
+│   │   │   │   ├── kmod-scsi-core.control
+│   │   │   │   ├── kmod-scsi-core.list
+│   │   │   │   ├── kmod-scsi-core.prerm
+│   │   │   │   ├── kmod-slhc.control
+│   │   │   │   ├── kmod-slhc.list
+│   │   │   │   ├── kmod-slhc.prerm
+│   │   │   │   ├── kmod-udptunnel4.control
+│   │   │   │   ├── kmod-udptunnel4.list
+│   │   │   │   ├── kmod-udptunnel4.prerm
+│   │   │   │   ├── kmod-udptunnel6.control
+│   │   │   │   ├── kmod-udptunnel6.list
+│   │   │   │   ├── kmod-udptunnel6.prerm
+│   │   │   │   ├── kmod-usb-core.control
+│   │   │   │   ├── kmod-usb-core.list
+│   │   │   │   ├── kmod-usb-core.prerm
+│   │   │   │   ├── kmod-usb-ehci.control
+│   │   │   │   ├── kmod-usb-ehci.list
+│   │   │   │   ├── kmod-usb-ehci.prerm
+│   │   │   │   ├── kmod-usb-ohci.control
+│   │   │   │   ├── kmod-usb-ohci.list
+│   │   │   │   ├── kmod-usb-ohci.prerm
+│   │   │   │   ├── kmod-usb-storage.control
+│   │   │   │   ├── kmod-usb-storage.list
+│   │   │   │   ├── kmod-usb-storage.prerm
+│   │   │   │   ├── kmod-usb2.control
+│   │   │   │   ├── kmod-usb2.list
+│   │   │   │   ├── kmod-usb2.prerm
+│   │   │   │   ├── kmod-usb3.control
+│   │   │   │   ├── kmod-usb3.list
+│   │   │   │   ├── kmod-usb3.prerm
+│   │   │   │   ├── kmod-warp.control
+│   │   │   │   ├── kmod-warp.list
+│   │   │   │   ├── kmod-warp.prerm
+│   │   │   │   ├── kvcedit.control
+│   │   │   │   ├── kvcedit.list
+│   │   │   │   ├── kvcedit.prerm
+│   │   │   │   ├── libblkid1.control
+│   │   │   │   ├── libblkid1.list
+│   │   │   │   ├── libblkid1.prerm
+│   │   │   │   ├── libblobmsg-json20210516.control
+│   │   │   │   ├── libblobmsg-json20210516.list
+│   │   │   │   ├── libblobmsg-json20210516.prerm
+│   │   │   │   ├── libbpf0.control
+│   │   │   │   ├── libbpf0.list
+│   │   │   │   ├── libbpf0.prerm
+│   │   │   │   ├── libc.control
+│   │   │   │   ├── libc.list
+│   │   │   │   ├── libc.prerm
+│   │   │   │   ├── libcap-ng.control
+│   │   │   │   ├── libcap-ng.list
+│   │   │   │   ├── libcap-ng.prerm
+│   │   │   │   ├── libelf1.control
+│   │   │   │   ├── libelf1.list
+│   │   │   │   ├── libelf1.prerm
+│   │   │   │   ├── libgcc1.control
+│   │   │   │   ├── libgcc1.list
+│   │   │   │   ├── libgcc1.prerm
+│   │   │   │   ├── libgmp10.control
+│   │   │   │   ├── libgmp10.list
+│   │   │   │   ├── libgmp10.prerm
+│   │   │   │   ├── libgpiod.control
+│   │   │   │   ├── libgpiod.list
+│   │   │   │   ├── libgpiod.prerm
+│   │   │   │   ├── libi2c.control
+│   │   │   │   ├── libi2c.list
+│   │   │   │   ├── libi2c.prerm
+│   │   │   │   ├── libip4tc2.control
+│   │   │   │   ├── libip4tc2.list
+│   │   │   │   ├── libip4tc2.prerm
+│   │   │   │   ├── libip6tc2.control
+│   │   │   │   ├── libip6tc2.list
+│   │   │   │   ├── libip6tc2.prerm
+│   │   │   │   ├── libipset13.control
+│   │   │   │   ├── libipset13.list
+│   │   │   │   ├── libipset13.prerm
+│   │   │   │   ├── libiwinfo-data.control
+│   │   │   │   ├── libiwinfo-data.list
+│   │   │   │   ├── libiwinfo-data.prerm
+│   │   │   │   ├── libiwinfo-lua.control
+│   │   │   │   ├── libiwinfo-lua.list
+│   │   │   │   ├── libiwinfo-lua.prerm
+│   │   │   │   ├── libiwinfo20210430.control
+│   │   │   │   ├── libiwinfo20210430.list
+│   │   │   │   ├── libiwinfo20210430.prerm
+│   │   │   │   ├── libjson-c5.control
+│   │   │   │   ├── libjson-c5.list
+│   │   │   │   ├── libjson-c5.prerm
+│   │   │   │   ├── libjson-script20210516.control
+│   │   │   │   ├── libjson-script20210516.list
+│   │   │   │   ├── libjson-script20210516.prerm
+│   │   │   │   ├── libkvcutil.control
+│   │   │   │   ├── libkvcutil.list
+│   │   │   │   ├── libkvcutil.prerm
+│   │   │   │   ├── liblua5.1.5.control
+│   │   │   │   ├── liblua5.1.5.list
+│   │   │   │   ├── liblua5.1.5.prerm
+│   │   │   │   ├── liblucihttp-lua.control
+│   │   │   │   ├── liblucihttp-lua.list
+│   │   │   │   ├── liblucihttp-lua.prerm
+│   │   │   │   ├── liblucihttp0.control
+│   │   │   │   ├── liblucihttp0.list
+│   │   │   │   ├── liblucihttp0.prerm
+│   │   │   │   ├── libmapd.control
+│   │   │   │   ├── libmapd.list
+│   │   │   │   ├── libmapd.prerm
+│   │   │   │   ├── libmnl0.control
+│   │   │   │   ├── libmnl0.list
+│   │   │   │   ├── libmnl0.prerm
+│   │   │   │   ├── libnl-core200.control
+│   │   │   │   ├── libnl-core200.list
+│   │   │   │   ├── libnl-core200.prerm
+│   │   │   │   ├── libnl-genl200.control
+│   │   │   │   ├── libnl-genl200.list
+│   │   │   │   ├── libnl-genl200.prerm
+│   │   │   │   ├── libnl-tiny1.control
+│   │   │   │   ├── libnl-tiny1.list
+│   │   │   │   ├── libnl-tiny1.prerm
+│   │   │   │   ├── libopenssl1.1.control
+│   │   │   │   ├── libopenssl1.1.list
+│   │   │   │   ├── libopenssl1.1.prerm
+│   │   │   │   ├── libpcap1.control
+│   │   │   │   ├── libpcap1.list
+│   │   │   │   ├── libpcap1.prerm
+│   │   │   │   ├── libpthread.control
+│   │   │   │   ├── libpthread.list
+│   │   │   │   ├── libpthread.prerm
+│   │   │   │   ├── librt.control
+│   │   │   │   ├── librt.list
+│   │   │   │   ├── librt.prerm
+│   │   │   │   ├── libubox20210516.control
+│   │   │   │   ├── libubox20210516.list
+│   │   │   │   ├── libubox20210516.prerm
+│   │   │   │   ├── libubus-lua.control
+│   │   │   │   ├── libubus-lua.list
+│   │   │   │   ├── libubus-lua.prerm
+│   │   │   │   ├── libubus20210630.control
+│   │   │   │   ├── libubus20210630.list
+│   │   │   │   ├── libubus20210630.prerm
+│   │   │   │   ├── libuci20130104.control
+│   │   │   │   ├── libuci20130104.list
+│   │   │   │   ├── libuci20130104.prerm
+│   │   │   │   ├── libuclient20201210.control
+│   │   │   │   ├── libuclient20201210.list
+│   │   │   │   ├── libuclient20201210.prerm
+│   │   │   │   ├── libuuid1.control
+│   │   │   │   ├── libuuid1.list
+│   │   │   │   ├── libuuid1.prerm
+│   │   │   │   ├── libxtables12.control
+│   │   │   │   ├── libxtables12.list
+│   │   │   │   ├── libxtables12.prerm
+│   │   │   │   ├── logd.control
+│   │   │   │   ├── logd.list
+│   │   │   │   ├── logd.prerm
+│   │   │   │   ├── lua.control
+│   │   │   │   ├── lua.list
+│   │   │   │   ├── lua.prerm
+│   │   │   │   ├── luasocket.control
+│   │   │   │   ├── luasocket.list
+│   │   │   │   ├── luasocket.prerm
+│   │   │   │   ├── luci-app-mtk.control
+│   │   │   │   ├── luci-app-mtk.list
+│   │   │   │   ├── luci-app-mtk.prerm
+│   │   │   │   ├── luci-base.conffiles
+│   │   │   │   ├── luci-base.control
+│   │   │   │   ├── luci-base.list
+│   │   │   │   ├── luci-base.prerm
+│   │   │   │   ├── luci-compat.control
+│   │   │   │   ├── luci-compat.list
+│   │   │   │   ├── luci-compat.prerm
+│   │   │   │   ├── luci-lib-base.control
+│   │   │   │   ├── luci-lib-base.list
+│   │   │   │   ├── luci-lib-base.prerm
+│   │   │   │   ├── luci-lib-ip.control
+│   │   │   │   ├── luci-lib-ip.list
+│   │   │   │   ├── luci-lib-ip.prerm
+│   │   │   │   ├── luci-lib-jsonc.control
+│   │   │   │   ├── luci-lib-jsonc.list
+│   │   │   │   ├── luci-lib-jsonc.prerm
+│   │   │   │   ├── luci-lib-nixio.control
+│   │   │   │   ├── luci-lib-nixio.list
+│   │   │   │   ├── luci-lib-nixio.prerm
+│   │   │   │   ├── luci-theme-bootstrap.control
+│   │   │   │   ├── luci-theme-bootstrap.list
+│   │   │   │   ├── luci-theme-bootstrap.prerm
+│   │   │   │   ├── mapd.control
+│   │   │   │   ├── mapd.list
+│   │   │   │   ├── mapd.prerm
+│   │   │   │   ├── mii_mgr.control
+│   │   │   │   ├── mii_mgr.list
+│   │   │   │   ├── mii_mgr.prerm
+│   │   │   │   ├── mtd.control
+│   │   │   │   ├── mtd.list
+│   │   │   │   ├── mtd.prerm
+│   │   │   │   ├── mtk-base-files.control
+│   │   │   │   ├── mtk-base-files.list
+│   │   │   │   ├── mtk-base-files.prerm
+│   │   │   │   ├── mtk-efuse-nl-tool.control
+│   │   │   │   ├── mtk-efuse-nl-tool.list
+│   │   │   │   ├── mtk-efuse-nl-tool.prerm
+│   │   │   │   ├── mtk_factory_rw.control
+│   │   │   │   ├── mtk_factory_rw.list
+│   │   │   │   ├── mtk_factory_rw.prerm
+│   │   │   │   ├── mtkhnat_util.control
+│   │   │   │   ├── mtkhnat_util.list
+│   │   │   │   ├── mtkhnat_util.prerm
+│   │   │   │   ├── netifd.conffiles
+│   │   │   │   ├── netifd.control
+│   │   │   │   ├── netifd.list
+│   │   │   │   ├── netifd.prerm
+│   │   │   │   ├── odhcp6c.control
+│   │   │   │   ├── odhcp6c.list
+│   │   │   │   ├── odhcp6c.prerm
+│   │   │   │   ├── odhcpd-ipv6only.control
+│   │   │   │   ├── odhcpd-ipv6only.list
+│   │   │   │   ├── odhcpd-ipv6only.prerm
+│   │   │   │   ├── omcproxy.conffiles
+│   │   │   │   ├── omcproxy.control
+│   │   │   │   ├── omcproxy.list
+│   │   │   │   ├── omcproxy.prerm
+│   │   │   │   ├── openssh-client.conffiles
+│   │   │   │   ├── openssh-client.control
+│   │   │   │   ├── openssh-client.list
+│   │   │   │   ├── openssh-client.prerm
+│   │   │   │   ├── openssh-keygen.control
+│   │   │   │   ├── openssh-keygen.list
+│   │   │   │   ├── openssh-keygen.prerm
+│   │   │   │   ├── openssh-server.conffiles
+│   │   │   │   ├── openssh-server.control
+│   │   │   │   ├── openssh-server.list
+│   │   │   │   ├── openssh-server.prerm
+│   │   │   │   ├── openwrt-keyring.control
+│   │   │   │   ├── openwrt-keyring.list
+│   │   │   │   ├── openwrt-keyring.prerm
+│   │   │   │   ├── opkg.conffiles
+│   │   │   │   ├── opkg.control
+│   │   │   │   ├── opkg.list
+│   │   │   │   ├── opkg.prerm
+│   │   │   │   ├── ppp-mod-pppoe.control
+│   │   │   │   ├── ppp-mod-pppoe.list
+│   │   │   │   ├── ppp-mod-pppoe.prerm
+│   │   │   │   ├── ppp-mod-pppol2tp.control
+│   │   │   │   ├── ppp-mod-pppol2tp.list
+│   │   │   │   ├── ppp-mod-pppol2tp.prerm
+│   │   │   │   ├── ppp-mod-pptp.control
+│   │   │   │   ├── ppp-mod-pptp.list
+│   │   │   │   ├── ppp-mod-pptp.prerm
+│   │   │   │   ├── ppp.conffiles
+│   │   │   │   ├── ppp.control
+│   │   │   │   ├── ppp.list
+│   │   │   │   ├── ppp.prerm
+│   │   │   │   ├── procd.control
+│   │   │   │   ├── procd.list
+│   │   │   │   ├── procd.prerm
+│   │   │   │   ├── regs.control
+│   │   │   │   ├── regs.list
+│   │   │   │   ├── regs.prerm
+│   │   │   │   ├── resolveip.control
+│   │   │   │   ├── resolveip.list
+│   │   │   │   ├── resolveip.prerm
+│   │   │   │   ├── swconfig.control
+│   │   │   │   ├── swconfig.list
+│   │   │   │   ├── swconfig.prerm
+│   │   │   │   ├── switch.control
+│   │   │   │   ├── switch.list
+│   │   │   │   ├── switch.prerm
+│   │   │   │   ├── tc-full.control
+│   │   │   │   ├── tc-full.list
+│   │   │   │   ├── tc-full.prerm
+│   │   │   │   ├── tc-mod-iptables.control
+│   │   │   │   ├── tc-mod-iptables.list
+│   │   │   │   ├── tc-mod-iptables.prerm
+│   │   │   │   ├── tcpdump.control
+│   │   │   │   ├── tcpdump.list
+│   │   │   │   ├── tcpdump.prerm
+│   │   │   │   ├── ubi-utils.control
+│   │   │   │   ├── ubi-utils.list
+│   │   │   │   ├── ubi-utils.prerm
+│   │   │   │   ├── ubox.control
+│   │   │   │   ├── ubox.list
+│   │   │   │   ├── ubox.prerm
+│   │   │   │   ├── ubus.control
+│   │   │   │   ├── ubus.list
+│   │   │   │   ├── ubus.prerm
+│   │   │   │   ├── ubusd.control
+│   │   │   │   ├── ubusd.list
+│   │   │   │   ├── ubusd.prerm
+│   │   │   │   ├── uci.control
+│   │   │   │   ├── uci.list
+│   │   │   │   ├── uci.prerm
+│   │   │   │   ├── uclient-fetch.control
+│   │   │   │   ├── uclient-fetch.list
+│   │   │   │   ├── uclient-fetch.prerm
+│   │   │   │   ├── urandom-seed.control
+│   │   │   │   ├── urandom-seed.list
+│   │   │   │   ├── urandom-seed.prerm
+│   │   │   │   ├── urngd.control
+│   │   │   │   ├── urngd.list
+│   │   │   │   ├── urngd.prerm
+│   │   │   │   ├── usign.control
+│   │   │   │   ├── usign.list
+│   │   │   │   ├── usign.prerm
+│   │   │   │   ├── wapp.control
+│   │   │   │   ├── wapp.list
+│   │   │   │   ├── wapp.prerm
+│   │   │   │   ├── wifi-profile.control
+│   │   │   │   ├── wifi-profile.list
+│   │   │   │   ├── wifi-profile.prerm
+│   │   │   │   ├── wificonf.control
+│   │   │   │   ├── wificonf.list
+│   │   │   │   ├── wificonf.prerm
+│   │   │   │   ├── wireless-regdb.control
+│   │   │   │   ├── wireless-regdb.list
+│   │   │   │   ├── wireless-regdb.prerm
+│   │   │   │   ├── wireless-tools.control
+│   │   │   │   ├── wireless-tools.list
+│   │   │   │   ├── wireless-tools.prerm
+│   │   │   │   ├── wsdd2.control
+│   │   │   │   ├── wsdd2.list
+│   │   │   │   ├── wsdd2.prerm
+│   │   │   │   ├── zlib.control
+│   │   │   │   ├── zlib.list
+│   │   │   │   └── zlib.prerm
+│   │   │   ├── lists
+│   │   │   └── status
+│   │   ├── os-release
+│   │   ├── pppd
+│   │   │   └── 2.4.8
+│   │   │       ├── pppol2tp.so
+│   │   │       ├── pptp.so
+│   │   │       └── rp-pppoe.so
+│   │   └── tc
+│   │       └── m_xt.so
+│   ├── libexec
+│   │   ├── cgi-io
+│   │   ├── cgi-io.i64
+│   │   ├── ip-full
+│   │   ├── login.sh
+│   │   ├── rpcd
+│   │   │   └── luci
+│   │   ├── scp-openssh
+│   │   ├── ssh-openssh
+│   │   ├── tc-full
+│   │   └── validate_firmware_image
+│   ├── sbin
+│   │   ├── brctl -> ../../bin/busybox
+│   │   ├── bridge
+│   │   ├── chroot -> ../../bin/busybox
+│   │   ├── crond -> ../../bin/busybox
+│   │   ├── dnsmasq
+│   │   ├── ebtables
+│   │   ├── ethtool
+│   │   ├── hwnat-disable.sh
+│   │   ├── hwnat-enable.sh
+│   │   ├── i2cdetect
+│   │   ├── i2cdump
+│   │   ├── i2cget
+│   │   ├── i2cset
+│   │   ├── i2ctransfer
+│   │   ├── ip6tables -> xtables-legacy-multi
+│   │   ├── ip6tables-restore -> xtables-legacy-multi
+│   │   ├── ip6tables-save -> xtables-legacy-multi
+│   │   ├── ipset
+│   │   ├── iptables -> xtables-legacy-multi
+│   │   ├── iptables-restore -> xtables-legacy-multi
+│   │   ├── iptables-save -> xtables-legacy-multi
+│   │   ├── iw
+│   │   ├── iwconfig
+│   │   ├── iwlist -> iwconfig
+│   │   ├── iwpriv -> iwconfig
+│   │   ├── mii_mgr
+│   │   ├── mii_mgr_cl45
+│   │   ├── mtk-efuse-tool
+│   │   ├── ntpd -> ../../bin/busybox
+│   │   ├── ntpd-hotplug
+│   │   ├── odhcp6c
+│   │   ├── odhcpd
+│   │   ├── odhcpd-update
+│   │   ├── omcproxy
+│   │   ├── opkg-key
+│   │   ├── pppd
+│   │   ├── sshd
+│   │   ├── swapoff -> ../../sbin/block
+│   │   ├── swapon -> ../../sbin/block
+│   │   ├── switch
+│   │   ├── tcpdump
+│   │   ├── telnetd -> ../../bin/busybox
+│   │   ├── ubiattach
+│   │   ├── ubiblock
+│   │   ├── ubicrc32
+│   │   ├── ubidetach
+│   │   ├── ubiformat
+│   │   ├── ubimkvol
+│   │   ├── ubinfo
+│   │   ├── ubinize
+│   │   ├── ubirename
+│   │   ├── ubirmvol
+│   │   ├── ubirsvol
+│   │   ├── ubiupdatevol
+│   │   ├── watchdog
+│   │   ├── wifi_control
+│   │   ├── wifi_control2
+│   │   └── xtables-legacy-multi
+│   └── share
+│       ├── acl.d
+│       │   ├── dnsmasq_acl.json
+│       │   ├── luci-base.json
+│       │   └── ntpd.json
+│       ├── dnsmasq
+│       │   ├── dhcpbogushostname.conf
+│       │   └── rfc6761.conf
+│       ├── libiwinfo
+│       │   └── devices.txt
+│       ├── libubox
+│       │   └── jshn.sh
+│       ├── luci
+│       │   └── menu.d
+│       │       └── luci-base.json
+│       ├── rpcd
+│       │   └── acl.d
+│       │       ├── luci-base.json
+│       │       └── luci-compat.json
+│       └── udhcpc
+│           └── default.script
+├── var -> tmp
+└── www
+    ├── cgi-bin
+    │   ├── cgi-backup -> ../../usr/libexec/cgi-io
+    │   ├── cgi-download -> ../../usr/libexec/cgi-io
+    │   ├── cgi-exec -> ../../usr/libexec/cgi-io
+    │   ├── cgi-upload -> ../../usr/libexec/cgi-io
+    │   ├── luci
+    │   └── luci.i64
+    ├── index.html
+    └── luci-static
+        ├── bootstrap
+        │   ├── cascade.css
+        │   ├── favicon.png
+        │   └── mobile.css
+        ├── bootstrap-dark
+        │   ├── cascade.css
+        │   ├── favicon.png
+        │   └── mobile.css
+        ├── bootstrap-light
+        │   ├── cascade.css
+        │   ├── favicon.png
+        │   └── mobile.css
+        └── resources
+            ├── cbi
+            │   ├── add.gif
+            │   ├── apply.gif
+            │   ├── arrow.gif
+            │   ├── down.gif
+            │   ├── download.gif
+            │   ├── edit.gif
+            │   ├── fieldadd.gif
+            │   ├── file.gif
+            │   ├── file.svg
+            │   ├── find.gif
+            │   ├── folder.gif
+            │   ├── folder.svg
+            │   ├── help.gif
+            │   ├── key.gif
+            │   ├── link.gif
+            │   ├── link.svg
+            │   ├── reload.gif
+            │   ├── remove.gif
+            │   ├── reset.gif
+            │   ├── save.gif
+            │   ├── up.gif
+            │   └── user.gif
+            ├── cbi.js
+            ├── chartist.min.css
+            ├── chartist.min.js
+            ├── firewall.js
+            ├── form.js
+            ├── fs.js
+            ├── icons
+            │   ├── alias.png
+            │   ├── alias_disabled.png
+            │   ├── bridge.png
+            │   ├── bridge_disabled.png
+            │   ├── ethernet.png
+            │   ├── ethernet_disabled.png
+            │   ├── loading.gif
+            │   ├── port_down.png
+            │   ├── port_up.png
+            │   ├── signal-0-25.png
+            │   ├── signal-0.png
+            │   ├── signal-25-50.png
+            │   ├── signal-50-75.png
+            │   ├── signal-75-100.png
+            │   ├── signal-none.png
+            │   ├── switch.png
+            │   ├── switch_disabled.png
+            │   ├── tunnel.png
+            │   ├── tunnel_disabled.png
+            │   ├── vlan.png
+            │   ├── vlan_disabled.png
+            │   ├── wifi.png
+            │   └── wifi_disabled.png
+            ├── jquery-3.5.1.min.js
+            ├── luci.js
+            ├── menu-bootstrap.js
+            ├── monCon.js
+            ├── network.js
+            ├── promis.min.js
+            ├── protocol
+            │   ├── dhcp.js
+            │   ├── none.js
+            │   └── static.js
+            ├── rpc.js
+            ├── tools
+            │   ├── prng.js
+            │   └── widgets.js
+            ├── uci.js
+            ├── ui.js
+            ├── validation.js
+            ├── view
+            │   └── bootstrap
+            │       └── sysauth.js
+            ├── vis.js
+            └── xhr.js
+
+177 directories, 3383 files
