@@ -15,7 +15,7 @@ KITRI BoB(Best of the Best) 13기에서 진행한 프로젝트로, 4개월간의
 - PL(Project Leader) : 김현식
 - Mentee : 👑이병영, 김상철, 김서율, 김민지, 김태연, 장형범
 
-# 카테고리
+# 카테고리  
 
 ---
 ### 분석 방법론
