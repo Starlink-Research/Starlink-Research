@@ -736,7 +736,7 @@ Router 권한은 TLS 인증서를 갖춘 라우터나 특정 내부 경로를 �
 
 DISHY의 gRPC 서버에 gRPC 요청이 전송되었을 경우, main.(*DishControl).HandleRequest 함수에서 요청을 받아 각 gRPC 요청의 핸들러 함수에게 흐름을 넘겨준다.일반 gRPC 요청은사용자 유형과 요청에 허용된 유저 유형 리스트를 비교하여 권한을 검증한 후 상태 코드나 메세지를 담은 protobuf 응답을 전송하게 된다. 
 
-예를 들어 getHistory gRPC 요청과 같은 경우, **LAN(2), CLOUD(3), ROUTER(5) GOD(1)** 사용자 유형인지를 검사한다.
+예를 들어 getHistory gRPC 요청과 같은 경우, 권한 모델 중에서 **LAN(2), CLOUD(3), ROUTER(5) GOD(1)** 사용자 유형인지를 검사한다.
 
 ![image.png]( Img/image10.png?raw=true)
 
