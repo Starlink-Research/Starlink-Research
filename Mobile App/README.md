@@ -85,7 +85,7 @@ base/.
 
 ![image.png](Img/image.png)
 
-<application> 태그의 이름과 <activity>의 이름이 모두 **`com.starlink.mobile`** 패키지로 설정이 되어있다. 앱의 주요 기능은 **`com.starlink`** 패키지에 있을 것으로 추정되었으나, 실제 존재하는 패키지는 4개이다.
+`<application>` 태그의 이름과 `<activity>`의 이름이 모두 **`com.starlink.mobile`** 패키지로 설정이 되어있다. 앱의 주요 기능은 **`com.starlink`** 패키지에 있을 것으로 추정되었으나, 실제 존재하는 패키지는 4개이다.
 
 ![image.png](Img/image%201.png)
 
